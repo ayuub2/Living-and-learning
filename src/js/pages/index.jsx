@@ -1,0 +1,30 @@
+var React = require("-aek/react");
+var Page = require("-components/page");
+var {BasicSegment} = require("-components/segment");
+var Button = require("-components/button");
+
+
+
+var IndexPage = React.createClass({
+  onClick:function(page,ev){
+    console.log("page: " + page);
+    ev.preventDefault();
+    this.props.onSelect(page);
+  },
+
+
+
+  render:function(){
+    return (
+      <Page>
+        <BasicSegment style={{padding:"0px", margin:"0px"}}>
+          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"second")}>
+            <img src="http://www.essex.ac.uk/campusm/Your_Campus_Guide_Colchester_2016/Your_Campus_Guide_Colchester_2016-page-001.jpg" height="100%" width="100%"/>
+          </Button>
+        </BasicSegment>
+      </Page>
+    );
+  }
+});
+
+module.exports = IndexPage;
