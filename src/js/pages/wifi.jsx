@@ -3,20 +3,18 @@ var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
 
-var StudyPage = React.createClass({
+var WifiPage = React.createClass({
 
   onClick:function(page,ev){
       ev.preventDefault();
-      console.log("Study page: " + page);
       this.props.onSelect(page);
-
-    },
+  },
 
   render:function(){
     return (
       <Page>
         <BasicSegment style={{position:"relative"}}>
-          <h1 style={{fontWeight:"bold"}}>Study</h1>
+          <h1 style={{fontWeight:"bold"}}>Wi-fi on campus</h1>
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
           <h2>Content</h2>
@@ -30,4 +28,5 @@ var StudyPage = React.createClass({
     );
   }
 });
-module.exports = StudyPage;
+
+module.exports = WifiPage;
