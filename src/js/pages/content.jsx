@@ -1,10 +1,6 @@
 var React = require("-aek/react");
 var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
-var Button = require("-components/button");
-var {AekReactRouter} = require("-components/router");
-
-var router = new AekReactRouter();
 
 var ContentPage = React.createClass({
 
