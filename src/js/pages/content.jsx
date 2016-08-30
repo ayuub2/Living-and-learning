@@ -29,7 +29,7 @@ onClick:function(page,ev){
               </tr>
               <tr>
                 <th style={{color:"#33ccff", fontSize:"135%"}}>10</th>
-                <th style={{fontSize:"120%"}}>Tech World</th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"tech")} style={{display:"block"}}>Tech World</a></th>
               </tr>
               <tr>
                 <th style={{color:"#33ccff", fontSize:"135%"}}>11</th>
