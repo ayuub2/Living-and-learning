@@ -10,12 +10,16 @@ var router = new AekReactRouter();
 var IndexPage = require("./pages/index");
 var SecondPage = require("./pages/second");
 var ContentPage = require("./pages/content");
+var StudyPage = require("./pages/study");
 
 var Screen = React.createClass({
   selectButton:function(page){
     if(page == "second"){router.goto("/second/");}
     else if(page == "content"){
       router.goto("/content/");
+    }
+    else if(page == "study"){
+      router.goto("/study/")
     }
   },
   render:function() {
@@ -27,7 +31,9 @@ var Screen = React.createClass({
               <RouterView router={router}>
                 <IndexPage path="/" onSelect={this.selectButton}/>
                 <SecondPage path="/second/" onSelect={this.selectButton}/>
-                <ContentPage path="/content/"/>
+                <ContentPage path="/content/" onSelect={this.selectButton}/>
+                <StudyPage path="/study/"/>
+                
 
               </RouterView>
             </Panel>

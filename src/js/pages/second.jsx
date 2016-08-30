@@ -21,7 +21,7 @@ var SecondPage = React.createClass({
           </Button>
         </BasicSegment>
         <BasicSegment style={{padding:"0px", margin:"0px"}} height="80%" width="100%">
-          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick}>
+          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"content")}>
             <img style={{position:"relative", display:"block"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/background.jpg" height="100%" width="100%">
               <h1 style={{position:"absolute", top:"-40px", left:"100px", color:"black", fontWeight:"bolder", fontSize:"300%", fontFamily:"Helvetica"}}>WELCOME HOME</h1>
               <p style={{position:"absolute", top:"20px", left:"90px", fontWeight:"bolder", fontSize:"100%", fontFamily:"Helvetica", color:"white", textTransform:"uppercase"}}>Your new home is a place of wonderful<br/> contrasts. Set in acres of rolling parkland,<br/> and built in the architectural style of 1960s<br/> Brutalism. Welcome to our Essex. Welcome<br/> to our incredible community.  Welcome home. </p>
