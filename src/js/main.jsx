@@ -13,7 +13,7 @@ var StudyPageTwo = require("./pages/study_two");
 var StudyPageThree = require("./pages/study_three");
 var StudyPageFour = require("./pages/study_four");
 var HealthPage = require("./pages/health");
-
+var HealthPageTwo = require("./pages/health_two");
 var TechPage = require("./pages/tech");
 var TechOnePage = require("./pages/tech_one");
 var TechTwoPage = require("./pages/tech_two");
