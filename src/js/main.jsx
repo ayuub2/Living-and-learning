@@ -14,6 +14,8 @@ var StudyPage = require("./pages/study");
 var StudyPageTwo = require("./pages/study_two");
 var StudyPageThree = require("./pages/study_three");
 var StudyPageFour = require("./pages/study_four");
+var HealthPage = require("./pages/health");
+var HealthPageTwo = require("./pages/health_two");
 
 var Screen = React.createClass({
   selectButton:function(page){
@@ -33,6 +35,12 @@ var Screen = React.createClass({
     else if(page == "study_four"){
       router.goto("/study_four/");
     }
+    else if(page == "health"){
+      router.goto("/health/");
+    }
+    else if(page == "health_two"){
+      router.goto("/health_two/");
+    }
   },
   render:function() {
 
@@ -48,7 +56,8 @@ var Screen = React.createClass({
                 <StudyPageTwo path="/study_two/" onSelect={this.selectButton}/>
                 <StudyPageThree path="/study_three/" onSelect={this.selectButton}/>
                 <StudyPageFour path="/study_four/" onSelect={this.selectButton}/>
-
+                <HealthPage path="/health/" onSelect={this.selectButton}/>
+                <HealthPageTwo path="/health_two" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
