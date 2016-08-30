@@ -32,8 +32,8 @@ var Screen = React.createClass({
                 <IndexPage path="/" onSelect={this.selectButton}/>
                 <SecondPage path="/second/" onSelect={this.selectButton}/>
                 <ContentPage path="/content/" onSelect={this.selectButton}/>
-                <StudyPage path="/study/"/>
-                
+                <StudyPage path="/study/" onSelect={this.selectButton}/>
+
 
               </RouterView>
             </Panel>
