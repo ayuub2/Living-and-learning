@@ -14,6 +14,11 @@ var StudyPageThree = require("./pages/study_three");
 var StudyPageFour = require("./pages/study_four");
 var HealthPage = require("./pages/health");
 var HealthPageTwo = require("./pages/health_two");
+var HealthPageThree = require("./pages/health_three");
+var HealthPageFour = require("./pages/health_four");
+var HealthPageFive = require("./pages/health_five");
+var HealthPageSix = require("./pages/health_six");
+var HealthPageSeven = require("./pages/health_seven");
 var TechPage = require("./pages/tech");
 var TechOnePage = require("./pages/tech_one");
 var TechTwoPage = require("./pages/tech_two");
@@ -46,6 +51,21 @@ var Screen = React.createClass({
     }
     else if(page == "health_two"){
       router.goto("/health_two/");
+    }
+    else if(page == "health_three"){
+      router.goto("/health_three/");
+    }
+    else if(page == "health_four"){
+      router.goto("/health_four/");
+    }
+    else if(page == "health_five"){
+      router.goto("/health_five/");
+    }
+    else if(page == "health_six"){
+      router.goto("/health_six/");
+    }
+    else if(page == "health_seven"){
+      router.goto("/health_seven/");
     }
     else if(page == "study"){
       router.goto("/study/");
@@ -82,6 +102,11 @@ var Screen = React.createClass({
                 <StudyPageFour path="/study_four/" onSelect={this.selectButton}/>
                 <HealthPage path="/health/" onSelect={this.selectButton}/>
                 <HealthPageTwo path="/health_two/" onSelect={this.selectButton}/>
+                <HealthPageThree path="/health_three/" onSelect={this.selectButton}/>
+                <HealthPageFour path="/health_four/" onSelect={this.selectButton}/>
+                <HealthPageFive path="/health_five/" onSelect={this.selectButton}/>
+                <HealthPageSix path="/health_six/" onSelect={this.selectButton}/>
+                <HealthPageSeven path="/health_seven/" onSelect={this.selectButton}/>
                 <TechPage path="/tech/" onSelect={this.selectButton}/>
                 <TechOnePage path="/tech_one/" onSelect={this.selectButton}/>
                 <TechTwoPage path="/tech_two/" onSelect={this.selectButton}/>
