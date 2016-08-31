@@ -19,6 +19,7 @@ var HealthPageFour = require("./pages/health_four");
 var HealthPageFive = require("./pages/health_five");
 var HealthPageSix = require("./pages/health_six");
 var HealthPageSeven = require("./pages/health_seven");
+var HealthPageEight = require("./pages/health_eight");
 var TechPage = require("./pages/tech");
 var TechOnePage = require("./pages/tech_one");
 var TechTwoPage = require("./pages/tech_two");
@@ -67,6 +68,9 @@ var Screen = React.createClass({
     else if(page == "health_seven"){
       router.goto("/health_seven/");
     }
+    else if(page == "health_eight"){
+      router.goto("/health_eight");
+    }
     else if(page == "study"){
       router.goto("/study/");
     }
@@ -107,6 +111,7 @@ var Screen = React.createClass({
                 <HealthPageFive path="/health_five/" onSelect={this.selectButton}/>
                 <HealthPageSix path="/health_six/" onSelect={this.selectButton}/>
                 <HealthPageSeven path="/health_seven/" onSelect={this.selectButton}/>
+                <HealthPageEight path="/health_eight/" onSelect={this.selectButton}/>
                 <TechPage path="/tech/" onSelect={this.selectButton}/>
                 <TechOnePage path="/tech_one/" onSelect={this.selectButton}/>
                 <TechTwoPage path="/tech_two/" onSelect={this.selectButton}/>

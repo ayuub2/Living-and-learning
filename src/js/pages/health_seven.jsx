@@ -27,7 +27,7 @@ var HealthPageSeven = React.createClass({
         <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
           <Button onClick={this.onClick.bind(this,"health_six")}>Back</Button>
           <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}}>Next</Button>
+          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_eight")}>Next</Button>
         </BasicSegment>
       </Page>
     );
