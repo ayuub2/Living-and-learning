@@ -5,7 +5,7 @@ var Button = require("-components/button");
 
 
 
-var SuPage = React.createClass({
+var SuPageTwo = React.createClass({
   onClick:function(page,ev){
     ev.preventDefault();
     this.props.onSelect(page);
@@ -17,8 +17,8 @@ var SuPage = React.createClass({
     return (
       <Page>
         <BasicSegment style={{padding:"0px", margin:"0px"}}>
-          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"su_two")}>
-            <img src="http://www.essex.ac.uk/campusm/su/su.jpg" height="100%" width="100%"/>
+          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"su_three")}>
+            <img src="http://www.essex.ac.uk/campusm/su/su_two.jpg" height="100%" width="100%"/>
           </Button>
         </BasicSegment>
       </Page>
@@ -26,4 +26,4 @@ var SuPage = React.createClass({
   }
 });
 
-module.exports = SuPage;
+module.exports = SuPageTwo;

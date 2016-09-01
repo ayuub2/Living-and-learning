@@ -29,6 +29,9 @@ var CareerPage = require("./pages/career");
 var CareerPageTwo = require("./pages/career_two");
 var CareerPageThree = require("./pages/career_three");
 var SuPage = require("./pages/su");
+var SuPageTwo = require("./pages/su_two");
+var SuPageThree = require("./pages/su_three");
+var SuPageFour = require("./pages/su_four");
 var Screen = React.createClass({
 
   selectButton:function(page){
@@ -96,13 +99,22 @@ var Screen = React.createClass({
       router.goto("/career/");
     }
     else if(page == "career_two"){
-      router.goto("career_two");
+      router.goto("/career_two/");
     }
     else if(page == "career_three"){
-      router.goto("career_three");
+      router.goto("/career_three/");
     }
     else if(page == "su"){
-      router.goto("su");
+      router.goto("/su/");
+    }
+    else if(page == "su_two"){
+      router.goto("/su_two/");
+    }
+    else if(page == "su_three"){
+      router.goto("/su_three/");
+    }
+    else if(page == "su_four"){
+      router.goto("/su_four/");
     }
   },
 
@@ -136,6 +148,9 @@ var Screen = React.createClass({
                 <CareerPageTwo path="/career_two/" onSelect={this.selectButton}/>
                 <CareerPageThree path="/career_three/" onSelect={this.selectButton}/>
                 <SuPage path="/su/" onSelect={this.selectButton}/>
+                <SuPageTwo path="/su_two/" onSelect={this.selectButton}/>
+                <SuPageThree path="/su_three/" onSelect={this.selectButton}/>
+                <SuPageFour path="/su_four/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
