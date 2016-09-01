@@ -22,7 +22,15 @@ var HealthPageThree = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Faith</h2>
           <p>We’re proud of our vibrant and diverse multicultural community and we recognise and support the many different religions and beliefs on campus. The calm, friendly and supportive atmosphere in our Multi-Faith Chaplaincy is a welcoming place for staff, students and the wider community to meet, interact and engage with each other. www.essex.ac.uk/welcome/mfc</p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Staying safe</h2>
-          <p>Stay safe, stay happy. Follow some common- sense tips whether you’re living on or off campus.<br/>Avoid walking or cycling alone in isolated areas or unlit or poorly lit footpaths.<br/>Arrange to walk with others at night and keep to well-lit streets – avoid shortcuts<br/>¢ Lock your room when you leave and don’t let strangers in to your building<br/>Don’t use ATMs if anyone suspicious is hanging around<br/>Don’t carry large sums of money around, or store large sums in your room – use banking facilities<br/>Get a personal alarm, available at SU Advice Centre, Information Centre and Nightline<br/>Be vigilant and report anything suspicious to our security patrol officers, in the Information Centre on Square 3<br/>www.essex.ac.uk/welcome/safety </p>
+          <p>Stay safe, stay happy. Follow some common- sense tips whether you’re living on or off campus.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Avoid walking or cycling alone in isolated areas or unlit or poorly lit footpaths.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Arrange to walk with others at night and keep to well-lit streets – avoid shortcuts
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Lock your room when you leave and don’t let strangers in to your building
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Don’t use ATMs if anyone suspicious is hanging around
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Don’t carry large sums of money around, or store large sums in your room – use banking facilities
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Get a personal alarm, available at SU Advice Centre, Information Centre and Nightline
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Be vigilant and report anything suspicious to our security patrol officers, in the Information Centre on Square 3
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/safety </p>
         </BasicSegment>
         <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
           <Button onClick={this.onClick.bind(this,"health_two")}>Back</Button>

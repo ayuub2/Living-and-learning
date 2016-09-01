@@ -25,7 +25,9 @@ var TechOnePage = require("./pages/tech_one");
 var TechTwoPage = require("./pages/tech_two");
 var TechThreePage = require("./pages/tech_three");
 var TechFourPage = require("./pages/tech_four");
-
+var CareerPage = require("./pages/career");
+var CareerPageTwo = require("./pages/career_two");
+var CareerPageThree = require("./pages/career_three");
 var Screen = React.createClass({
 
   selectButton:function(page){
@@ -77,17 +79,26 @@ var Screen = React.createClass({
     else if (page == "tech") {
       router.goto("/tech/");
     }
-    else if (page == "account" || page == "ITHelp" || page == "wifi") {
+    else if (page == "tech_one") {
       router.goto("/tech_one/");
     }
-    else if (page == "microsoft" || page == "365" || page == "lynda") {
+    else if (page == "tech_two") {
       router.goto("/tech_two/");
     }
-    else if (page == "labs" || page == "groupStudy" || page == "saving") {
+    else if (page == "tech_three") {
       router.goto("/tech_three/");
     }
-    else if (page == "printing" || page == "news") {
+    else if (page == "tech_four") {
       router.goto("/tech_four/");
+    }
+    else if(page == "career"){
+      router.goto("/career/");
+    }
+    else if(page == "career_two"){
+      router.goto("career_two");
+    }
+    else if(page == "career_three"){
+      router.goto("career_three");
     }
   },
 
@@ -117,6 +128,9 @@ var Screen = React.createClass({
                 <TechTwoPage path="/tech_two/" onSelect={this.selectButton}/>
                 <TechThreePage path="/tech_three/" onSelect={this.selectButton}/>
                 <TechFourPage path="/tech_four/" onSelect={this.selectButton}/>
+                <CareerPage path="/career/" onSelect={this.selectButton}/>
+                <CareerPageTwo path="/career_two/" onSelect={this.selectButton}/>
+                <CareerPageThree path="/career_three" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>

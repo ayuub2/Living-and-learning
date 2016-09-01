@@ -25,7 +25,7 @@ onClick:function(page,ev){
               </tr>
               <tr>
                 <th style={{color:"#33ccff", fontSize:"135%"}}>10</th>
-                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"tech")} style={{display:"block"}}>Tech World</a></th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"tech_one")} style={{display:"block"}}>Tech World</a></th>
               </tr>
               <tr>
                 <th style={{color:"#33ccff", fontSize:"135%"}}>11</th>
@@ -33,7 +33,26 @@ onClick:function(page,ev){
               </tr>
               <tr>
                 <th style={{color:"#33ccff", fontSize:"135%"}}>16</th>
-                <th style={{fontSize:"120%"}}>Future career starts here</th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"career")}>Future career starts here</a></th>
+              </tr>
+            </table>
+            <h2 style={{color:"#2FFB3C", fontWeight:"bold"}}>Student Union</h2>
+            <table  style={{width:"100%", marginTop:"-20px"}}>
+              <tr>
+                <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
+                <th style={{fontSize:"120%"}}>Hello wonderful people</th>
+              </tr>
+              <tr>
+                <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
+                <th style={{fontSize:"120%"}}>What do we do?</th>
+              </tr>
+              <tr>
+                <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
+                <th style={{fontSize:"120%"}}>10 reasons why</th>
+              </tr>
+              <tr>
+                <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
+                <th style={{fontSize:"120%"}}>This is just the start</th>
               </tr>
             </table>
             <h2 style={{color:"#ff3399", fontWeight:"bold"}}>LIVING</h2>
