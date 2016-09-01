@@ -26,10 +26,10 @@ var StudyPageTwo = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Module enrolment</h2>
           <p>You can select your optional module choices for your course via eNROL<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/enrol </p>
         </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
+        <BasicSegment style={{position:"fixed", bottom:"0", width:"100%", height:"60px"}}>
           <Button onClick={this.onClick.bind(this,"study")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"study_three")}>Next</Button>
+          <Button style={{position:"fixed", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+          <Button style={{position:"fixed", right:"0px"}} onClick={this.onClick.bind(this,"study_three")}>Next</Button>
         </BasicSegment>
       </Page>
     );
