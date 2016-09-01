@@ -28,6 +28,7 @@ var TechFourPage = require("./pages/tech_four");
 var CareerPage = require("./pages/career");
 var CareerPageTwo = require("./pages/career_two");
 var CareerPageThree = require("./pages/career_three");
+var SuPage = require("./pages/su");
 var Screen = React.createClass({
 
   selectButton:function(page){
@@ -100,6 +101,9 @@ var Screen = React.createClass({
     else if(page == "career_three"){
       router.goto("career_three");
     }
+    else if(page == "su"){
+      router.goto("su");
+    }
   },
 
   render:function() {
@@ -130,7 +134,8 @@ var Screen = React.createClass({
                 <TechFourPage path="/tech_four/" onSelect={this.selectButton}/>
                 <CareerPage path="/career/" onSelect={this.selectButton}/>
                 <CareerPageTwo path="/career_two/" onSelect={this.selectButton}/>
-                <CareerPageThree path="/career_three" onSelect={this.selectButton}/>
+                <CareerPageThree path="/career_three/" onSelect={this.selectButton}/>
+                <SuPage path="/su/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
