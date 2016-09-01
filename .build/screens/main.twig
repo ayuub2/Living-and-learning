@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+  {{ aek.set_aek_version("2.0") }}
+  {{ aek.set_header_text('My Screen') }}
+
+
+<html lang="en" data-aek-package="[[__package_data__]]" data-env="prod" data-platform="{{ aek.get_platform() }}" >
+<head>
+  <meta charset="utf-8">
+  <title>My Screen</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  </head>
+
+<body  >
+
+  
+  <script type="text/aekdefer">
+
+    var sheets = ["main"];
+    sheets = sheets.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/css/"+s+".css"});
+
+    var scripts = ["https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js","main"];
+    scripts = scripts.map(function(s) {return s.match(/^(https?:\/)?\//) && s || "[[__public_assets__]]/js/"+s+".js"});
+
+    _aekLoad(sheets.concat(scripts));
+
+  </script>
+
+  <script>
+    window.addEventListener("load",function() {
+      var script = document.createElement("script");
+      script.src = "https://portal.ombiel.co.uk/assets/aek/aek-loader/0.0.6/packed/loader.js";
+      document.head.appendChild(script);
+    });
+  </script>
+
+</body>
+</html>
