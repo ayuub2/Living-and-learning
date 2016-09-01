@@ -14,13 +14,13 @@ var SecondPage = React.createClass({
 
   render:function(){
     return (
-      <Page>
+      <Page style={{position:"relative"}}>
         <BasicSegment style={{padding:"0px", margin:"0px"}} height="25%" width="100%">
           <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"content")}>
             <img style={{display:"block"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/house-image.jpg" height="100%" width="100%"/>
           </Button>
         </BasicSegment>
-        <BasicSegment style={{padding:"0px", margin:"0px"}} height="80%" width="100%">
+        <BasicSegment style={{position:"relative", padding:"0px", margin:"0px"}} height="80%" width="100%">
           <Button compact="true" style={{position:"relative",padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"content")}>
             <img style={{position:"relative", display:"block"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/background.jpg" height="100%" width="100%">
               <h1 style={{position:"absolute", top:"-40px", left:"100px", color:"black", fontWeight:"bolder", fontSize:"300%", fontFamily:"Helvetica"}}>WELCOME HOME</h1>
