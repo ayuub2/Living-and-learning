@@ -19,7 +19,7 @@ var IndexPage = React.createClass({
       <Page>
         <BasicSegment style={{padding:"0px", margin:"0px"}}>
           <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"second")}>
-            <img src="http://www.essex.ac.uk/campusm/Your_Campus_Guide_Colchester_2016/Your_Campus_Guide_Colchester_2016-page-001.jpg" height="100%" width="100%"/>
+            <img src="http://www.essex.ac.uk/campusm/edits/home/home.jpg" height="100%" width="100%"/>
           </Button>
         </BasicSegment>
       </Page>

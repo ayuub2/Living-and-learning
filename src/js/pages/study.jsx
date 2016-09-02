@@ -2,6 +2,8 @@ var React = require("-aek/react");
 var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
+var {CBox,VBox} = require("@ombiel/aek-lib/react/components/layout");
+
 
 var StudyPage = React.createClass({
 
@@ -24,10 +26,10 @@ var StudyPage = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Personal tutors</h2>
           <p>As an undergraduate or taught postgraduate student you’ll have a personal tutor who you’ll meet soon after you arrive. If you’re a postgraduate research student your research supervisor will take on this role. Your personal tutor helps you connect with your department, school or centre; they’re someone you can talk to if you have questions about your course or encounter any difficulties that affect your studies.<br/>
           <img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/tutor </p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button style={{position:"fixed", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button onClick={this.onClick.bind(this,"study_two")} style={{position:"fixed", right:"0px"}}>Next</Button>
+          <BasicSegment >
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button onClick={this.onClick.bind(this,"study_two")} style={{position:"absolute", right:"0px"}}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );
