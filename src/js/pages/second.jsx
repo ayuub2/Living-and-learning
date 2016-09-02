@@ -22,7 +22,7 @@ var SecondPage = React.createClass({
           </Button>
         </BasicSegment>
         <BasicSegment style={{position:"relative", padding:"0px", margin:"0px"}} height="80%" width="100%">
-          <Button compact="true" style={{position:"relative",padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"content")}>
+          <Button compact="true" style={{position:"relative",padding:"0px", bottom:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"content")}>
             <img style={{position:"relative", display:"block"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/background.jpg" height="100%" width="100%">
               <VBox>
                 <CBox>
