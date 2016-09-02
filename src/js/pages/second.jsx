@@ -1,6 +1,6 @@
 var React = require("-aek/react");
 var Page = require("-components/page");
-var {Segment} = require("-components/segment");
+var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
 var {AekReactRouter} = require("-components/router");
 var {CBox,VBox} = require("@ombiel/aek-lib/react/components/layout");
@@ -16,7 +16,7 @@ var SecondPage = React.createClass({
   render:function(){
     return (
       <Page>
-        <Segment style={{padding:"0px", margin:"0px", height:"100%", width:"100%"}}>
+        <BasicSegment style={{padding:"0px", margin:"0px", height:"100%", width:"100%"}}>
           <Button style={{position:"relative",padding:"0px", bottom:"0px", margin:"0px",height:"100%", width:"100%"}} onClick={this.onClick.bind(this,"content")}>
             <img style={{position:"relative", display:"block", height:"100%", width:"100%"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/background.jpg">
               <VBox>
@@ -33,7 +33,7 @@ var SecondPage = React.createClass({
               </VBox>
             </img>
           </Button>
-        </Segment>
+        </BasicSegment>
       </Page>
     );
   }
