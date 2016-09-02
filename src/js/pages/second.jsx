@@ -1,6 +1,6 @@
 var React = require("-aek/react");
 var Page = require("-components/page");
-var {BasicSegment} = require("-components/segment");
+var {Segment} = require("-components/segment");
 var Button = require("-components/button");
 var {AekReactRouter} = require("-components/router");
 var {CBox,VBox} = require("@ombiel/aek-lib/react/components/layout");
@@ -15,17 +15,13 @@ var SecondPage = React.createClass({
 
   render:function(){
     return (
-      <Page style={{position:"relative"}}>
-        <BasicSegment style={{padding:"0px", margin:"0px"}} height="25%" width="100%">
-          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"content")}>
-            <img style={{display:"block"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/house-image.jpg" height="100%" width="100%"/>
-          </Button>
-        </BasicSegment>
-        <BasicSegment style={{position:"relative", padding:"0px", margin:"0px"}} height="100%" width="100%">
-          <Button compact="true" style={{position:"relative",padding:"0px", bottom:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"content")}>
-            <img style={{position:"relative", display:"block"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/background.jpg" height="100%" width="100%">
+      <Page>
+        <Segment style={{padding:"0px", margin:"0px", height:"100%", width:"100%"}}>
+          <Button style={{position:"relative",padding:"0px", bottom:"0px", margin:"0px",height:"100%", width:"100%"}} onClick={this.onClick.bind(this,"content")}>
+            <img style={{position:"relative", display:"block", height:"100%", width:"100%"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/background.jpg">
               <VBox>
                 <CBox>
+                  <img style={{display:"block"}} src="http://www.essex.ac.uk/campusm/edits/second-home-page/house-image.jpg" height="25%" width="100%"/>
                   <h1 style={{color:"black", fontWeight:"bolder", fontSize:"300%", fontFamily:"Helvetica"}}>WELCOME HOME</h1>
                   <p style={{fontWeight:"bolder", fontSize:"100%", fontFamily:"Helvetica", color:"white", textTransform:"uppercase"}}>Your new home is a place of wonderful<br/> contrasts. Set in acres of rolling parkland,<br/> and built in the architectural style of 1960s<br/> Brutalism. Welcome to our Essex. Welcome<br/> to our incredible community.  Welcome home. </p>
                   <h2 style={{color:"black", fontWeight:"normal", fontSize:"200%", fontFamily:"Helvetica"}}>So now what?</h2>
@@ -37,7 +33,7 @@ var SecondPage = React.createClass({
               </VBox>
             </img>
           </Button>
-        </BasicSegment>
+        </Segment>
       </Page>
     );
   }
