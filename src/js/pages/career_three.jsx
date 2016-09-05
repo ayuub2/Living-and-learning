@@ -25,11 +25,11 @@ var CareerPageThree = React.createClass({
           <p>Essex students know best. And it’s on that premise we invite current students to be ambassadors for our University, to help out on visit days, school talks, open days and campus tours. We recruit student ambassadors at the start of the autumn term, so keep an eye out for up-coming opportunities.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/ambassador</p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Volunteer with the vTeam</h2>
           <p>The vTeam is a fantastic opportunity to meet new people, make friends, give something to the local community, and gain valuable skills.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.su/vteam</p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"career_two")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"su")}>Next</Button>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"career_two")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"su")}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );

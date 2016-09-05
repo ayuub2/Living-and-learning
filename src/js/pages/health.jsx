@@ -27,11 +27,11 @@ var HealthPage = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Open: 9am - 5pm, Monday to Friday</p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Disability support</h2>
           <p>The Student Services Hub has specialist advisers to provide you with all the guidance you need on a range of disability support services from those with mental health difficulties to those with long- term medical conditions. Come and talk to us to find out more.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/disability<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/access </p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"tech_four")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_two")}>Next</Button>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"tech_four")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_two")}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );

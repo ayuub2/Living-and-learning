@@ -25,11 +25,11 @@ var CareerPage = React.createClass({
           <p>Stand out from the crowd and get University recognition for all your extra- curricular experience, with the Big Essex Award. Our employability award will help you identify and sell your skills and experience to employers.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/bige </p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>HEAR</h2>
           <p>When you leave us, you’ll receive a Higher Education Achievement Report, or ‘HEAR’. Your HEAR will be nationally recognised by employers and other universities and will present a complete picture of your time at Essex, from extra-curricular achievements to academic results. Take a look at our website to find out how to make the most of your HEAR.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/hear</p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"health_eight")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"career_two")}>Next</Button>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"health_eight")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"career_two")}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );

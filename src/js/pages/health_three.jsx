@@ -31,11 +31,11 @@ var HealthPageThree = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Get a personal alarm, available at SU Advice Centre, Information Centre and Nightline
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Be vigilant and report anything suspicious to our security patrol officers, in the Information Centre on Square 3
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/safety </p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"health_two")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_four")}>Next</Button>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"health_two")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_four")}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );

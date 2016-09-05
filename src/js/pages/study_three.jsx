@@ -27,12 +27,12 @@ var StudyPageThree = React.createClass({
           <p>Did you miss something? Our Listen Again service lets you listen to lectures again (see what we did there?) so you don’t miss a thing. www.essex.ac.uk/welcome/listenagain </p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Find your way around campus</h2>
           <p>Find Your Way is our interactive campus map app. Download it to help you find any location on campus and get directions quickly and easily. Trust us, you’ll need it! There’s also a handy web version. www.essex.ac.uk/welcome/findyourway</p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"study_two")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"study_four")}>Next</Button>
-        </BasicSegment>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"study_two")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"study_four")}>Next</Button>
+          </BasicSegment>
+      </BasicSegment>
       </Page>
     );
   }

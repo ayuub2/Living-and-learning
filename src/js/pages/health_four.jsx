@@ -25,11 +25,11 @@ var HealthPageFour = React.createClass({
           <p>Remember three important things to stay safe in the event of a fire: shout out, get out, stay out. Please read the emergency evacuation notice in your accommodation, work or study location for fire safety procedures. If you have a permanent or temporary disability that may mean you have difficulty in evacuating one or more areas, you can arrange for a Personal Emergency Evacuation Plan (PEEP).
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/emergency
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/peep</p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"health_three")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_five")}>Next</Button>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"health_three")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_five")}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );

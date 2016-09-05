@@ -26,11 +26,11 @@ var HealthPageFive = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Alcohol and drugs on campus</h2>
           <p>University life is about discovering new social opportunities, some may involve alcohol, and many won’t. We encourage students to act responsibly when using alcohol and acknowledge that using illegal drugs on our campuses is not permitted. Our wellbeing team offers confidential, on-campus support if you have concerns about alcohol or drug use. Meanwhile, get the facts.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/alcohol-drugs </p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"health_four")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_six")}>Next</Button>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"health_four")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_six")}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );

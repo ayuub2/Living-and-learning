@@ -22,11 +22,11 @@ var TechTwoPage = React.createClass({
           <p>All of our students get a Microsoft Office 365 email account that gives you your very own Essex email address and plenty of space to store your emails. We use email to contact you about important stuff, so make sure you check it regularly!<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/email </p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Lynda.com - grow your brain</h2>
           <p>At Essex we care about your personal development, so you have free access to Lynda. com, a massive online video library offering thousands of courses and tutorials on a wide range of topics. Develop skills at your own pace, build confidence, discover your interests and beef up your CV.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/lynda</p>
-        </BasicSegment>
-        <BasicSegment style={{position:"absolute", bottom:"0", width:"100%", height:"60px"}}>
-          <Button onClick={this.onClick.bind(this,"tech_one")}>Back</Button>
-          <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-          <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"tech_three")}>Next</Button>
+          <BasicSegment style={{height:"60px"}}>
+            <Button onClick={this.onClick.bind(this,"tech_one")}>Back</Button>
+            <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"tech_three")}>Next</Button>
+          </BasicSegment>
         </BasicSegment>
       </Page>
     );
