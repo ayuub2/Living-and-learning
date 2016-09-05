@@ -41,19 +41,19 @@ onClick:function(page,ev){
             <table  style={{width:"100%", marginTop:"-20px"}}>
               <tr>
                 <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
-                <th style={{fontSize:"120%"}}>Hello wonderful people</th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"su")}>Hello wonderful people</a></th>
               </tr>
               <tr>
                 <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
-                <th style={{fontSize:"120%"}}>What do we do?</th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"su_two")}>What do we do?</a></th>
               </tr>
               <tr>
                 <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
-                <th style={{fontSize:"120%"}}>10 reasons why</th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"su_three")}>10 reasons why</a></th>
               </tr>
               <tr>
                 <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>24</th>
-                <th style={{fontSize:"120%"}}>This is just the start</th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"su_four")}>This is just the start</a></th>
               </tr>
             </table>
             <h2 style={{color:"#ff3399", fontWeight:"bold"}}>LIVING</h2>
