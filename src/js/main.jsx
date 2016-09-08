@@ -55,6 +55,9 @@ var AroundPageThree = require("./pages/around_three");
 var MapsPage = require("./pages/map");
 var MapsPageTwo = require("./pages/map_two");
 var NewsPage = require("./pages/news");
+var NewsPageTwo = require("./pages/news_two");
+var NewsPageThree = require("./pages/news_three");
+var EssexPage = require("./pages/essex");
 
 
 
@@ -211,6 +214,15 @@ var Screen = React.createClass({
     else if(page == "news"){
       router.goto("/news/");
     }
+    else if(page == "news_two"){
+      router.goto("/news_two/");
+    }
+    else if(page == "news_three"){
+      router.goto("/news_three/");
+    }
+    else if(page == "essex"){
+      router.goto("essex");
+    }
   },
 
   render:function() {
@@ -269,6 +281,9 @@ var Screen = React.createClass({
                 <MapsPage path="/map/" onSelect={this.selectButton}/>
                 <MapsPageTwo path="/map_two/" onSelect={this.selectButton}/>
                 <NewsPage path="/news/" onSelect={this.selectButton}/>
+                <NewsPageTwo path="/news_two/" onSelect={this.selectButton}/>
+                <NewsPageThree path="/news_three/" onSelect={this.selectButton}/>
+                <EssexPage path="/essex/"onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>

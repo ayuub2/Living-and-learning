@@ -96,7 +96,7 @@ onClick:function(page,ev){
               </tr>
               <tr>
                 <th style={{color:"#ff3399", fontSize:"135%"}}>28</th>
-                <th style={{fontSize:"120%"}}>Essex is for life</th>
+                <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"essex")}>Essex is for life</a></th>
               </tr>
             </table>
         </BasicSegment>
