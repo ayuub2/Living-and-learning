@@ -32,6 +32,32 @@ var SuPage = require("./pages/su");
 var SuPageTwo = require("./pages/su_two");
 var SuPageThree = require("./pages/su_three");
 var SuPageFour = require("./pages/su_four");
+var WelcomePage = require("./pages/welcome");
+var WelcomePageTwo = require("./pages/welcome_two");
+var WelcomePageThree = require("./pages/welcome_three");
+var WelcomePageFour = require("./pages/welcome_four");
+var SportsPage = require("./pages/sports");
+var SportsPageTwo = require("./pages/sports_two");
+var SportsPageThree = require("./pages/sports_three");
+var CulturePage = require("./pages/culture");
+var CulturePageTwo = require("./pages/culture_two");
+var MoneyPage = require("./pages/money");
+var MoneyPageTwo = require("./pages/money_two");
+var MoneyPageThree = require("./pages/money_three");
+var MoneyPageFour = require("./pages/money_four");
+var EatPage = require("./pages/eat");
+var EatPageTwo = require("./pages/eat_two");
+var EatPageThree = require("./pages/eat_three");
+var GreenPage = require("./pages/green");
+var AroundPage = require("./pages/around");
+var AroundPageTwo = require("./pages/around_two");
+var AroundPageThree = require("./pages/around_three");
+var MapsPage = require("./pages/map");
+var MapsPageTwo = require("./pages/map_two");
+var NewsPage = require("./pages/news");
+
+
+
 var Screen = React.createClass({
 
   selectButton:function(page){
@@ -116,6 +142,75 @@ var Screen = React.createClass({
     else if(page == "su_four"){
       router.goto("/su_four/");
     }
+    else if(page == "welcome"){
+      router.goto("/welcome/");
+    }
+    else if(page == "welcome_two"){
+      router.goto("/welcome_two/");
+    }
+    else if(page == "welcome_three"){
+        router.goto("/welcome_three/");
+    }
+    else if(page == "welcome_four"){
+      router.goto("/welcome_four/");
+    }
+    else if(page == "sports"){
+      router.goto("/sports/");
+    }
+    else if(page == "sports_two"){
+        router.goto("/sports_two/");
+    }
+    else if(page == "sports_three"){
+      router.goto("/sports_three/");
+    }
+    else if(page == "culture"){
+      router.goto("/culture/");
+    }
+    else if(page == "culture_two"){
+      router.goto("/culture_two/");
+    }
+    else if(page == "money"){
+      router.goto("/money/");
+    }
+    else if(page == "money_two"){
+      router.goto("/money_two/");
+    }
+    else if(page == "money_three"){
+      router.goto("/money_three/");
+    }
+    else if(page == "money_four"){
+      router.goto("/money_four/");
+    }
+    else if(page == "eat"){
+      router.goto("/eat/");
+    }
+    else if(page == "eat_two"){
+      router.goto("/eat_two/");
+    }
+    else if(page == "eat_three"){
+      router.goto("/eat_three/");
+    }
+    else if(page == "green"){
+      router.goto("/green/");
+    }
+    else if(page == "around"){
+      router.goto("/around/");
+    }
+    else if(page == "around_two"){
+      router.goto("/around_two/");
+    }
+    else if(page == "around_three"){
+      router.goto("/around_three/");
+    }
+    else if(page == "map"){
+      router.goto("/map/");
+    }
+    else if(page == "map_two"){
+      router.goto("/map_two/");
+    }
+    else if(page == "news"){
+      router.goto("/news/");
+    }
   },
 
   render:function() {
@@ -151,6 +246,29 @@ var Screen = React.createClass({
                 <SuPageTwo path="/su_two/" onSelect={this.selectButton}/>
                 <SuPageThree path="/su_three/" onSelect={this.selectButton}/>
                 <SuPageFour path="/su_four/" onSelect={this.selectButton}/>
+                <WelcomePage path="/welcome/" onSelect={this.selectButton}/>
+                <WelcomePageTwo path="/welcome_two/" onSelect={this.selectButton}/>
+                <WelcomePageThree path="/welcome_three/" onSelect={this.selectButton}/>
+                <WelcomePageFour path="/welcome_four/" onSelect={this.selectButton}/>
+                <SportsPage path="/sports/" onSelect={this.selectButton}/>
+                <SportsPageTwo path="/sports_two/" onSelect={this.selectButton}/>
+                <SportsPageThree path="/sports_three/" onSelect={this.selectButton}/>
+                <CulturePage path="/culture/" onSelect={this.selectButton}/>
+                <CulturePageTwo path="/culture_two/" onSelect={this.selectButton}/>
+                <MoneyPage path="/money/" onSelect={this.selectButton}/>
+                <MoneyPageTwo path="/money_two/" onSelect={this.selectButton}/>
+                <MoneyPageThree path="/money_three/" onSelect={this.selectButton}/>
+                <MoneyPageFour path="/money_four/" onSelect={this.selectButton}/>
+                <EatPage path="/eat/" onSelect={this.selectButton}/>
+                <EatPageTwo path="/eat_two/" onSelect={this.selectButton}/>
+                <EatPageThree path="/eat_three/" onSelect={this.selectButton}/>
+                <GreenPage path="/green/" onSelect={this.selectButton}/>
+                <AroundPage path="/around/" onSelect={this.selectButton}/>
+                <AroundPageTwo path="/around_two/" onSelect={this.selectButton}/>
+                <AroundPageThree path="/around_three/"  onSelect={this.selectButton}/>
+                <MapsPage path="/map/" onSelect={this.selectButton}/>
+                <MapsPageTwo path="/map_two/" onSelect={this.selectButton}/>
+                <NewsPage path="/news/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
