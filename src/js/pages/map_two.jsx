@@ -24,7 +24,7 @@ var MapsPageTwo = React.createClass({
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Also…</h2>
           <p>If the last three digits are 700-799 the room is off Square 1, and if the last three digits are 500- 599 the room is in the Square 2 area (Computer Science). For example, 5.512 is room 512, floor 5. See? Easy! </p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"map")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"map_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"news")}>Next</Button>
           </BasicSegment>

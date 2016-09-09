@@ -29,7 +29,7 @@ var MoneyPage = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/point.jpg"/> events like Christmas and birthdays
           <br/>good place to start is by looking at average living costs for a student on the NUS website. There are also some good money management tips on the NUS finance pages. You’ll also find ‘top ten tips’ for better budgeting online.<br/>www.nus.org.uk/en/advice</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"culture_two")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"culture_two_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"money_two")}>Next</Button>
           </BasicSegment>

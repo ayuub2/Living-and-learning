@@ -24,7 +24,7 @@ var HealthPageSeven = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Our security patrol officers</h2>
           <p>Our University patrol officers are based on Square 3 in the Information Centre. They’re here to help you 24/7, 365 days a year. A friendly, approachable team, they’re always willing to assist and all are first aiders. Contact them externally on telephone: 01206 872125 or from accommodation StudentCom PC phone: 224 2125</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"health_six")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"health_six_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_eight")}>Next</Button>
           </BasicSegment>

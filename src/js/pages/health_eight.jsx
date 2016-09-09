@@ -22,7 +22,7 @@ var HealthPageEight = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Keep your stuff safe</h2>
           <p>Keep your valuable goods safe; get them security marked by our security team. Also, please remember to secure your belongings and accommodation by closing windows and locking doors whenever you’re going out – even if you’re just popping to the kitchen or next door.</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"health_seven")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"health_seven_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"career")}>Next</Button>
           </BasicSegment>

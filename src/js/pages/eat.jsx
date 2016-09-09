@@ -33,7 +33,7 @@ var EatPage = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/point.jpg"/> Lakeside Café – Square 5
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/point.jpg"/> No. 64, our unique bus cafe – opposite the Silberrad Student Centre</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"money_four")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"money_four_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"eat_two")}>Next</Button>
           </BasicSegment>

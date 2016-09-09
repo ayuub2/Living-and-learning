@@ -26,7 +26,7 @@ var HealthPageFour = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/students/campus/emergency.aspx"> www.essex.ac.uk/welcome/emergency</a>
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/health-safety/fire/peep.aspx"> www.essex.ac.uk/welcome/peep</a></p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"health_three")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"health_three_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_five")}>Next</Button>
           </BasicSegment>

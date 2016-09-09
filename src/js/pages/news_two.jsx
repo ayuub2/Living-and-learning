@@ -27,7 +27,7 @@ var NewsPageTwo = React.createClass({
           <p>Rebel is a creative community that is available to all students at Essex. If you are interested in journalism, video, TV, radio, photography, design or any form of creativity, come and find us in the SU Creative Studios in the Silberrad Student Centre, or find out more online.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essexstudent.com</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"news")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"news_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"news_three")}>Next</Button>
           </BasicSegment>

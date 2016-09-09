@@ -24,7 +24,7 @@ var NewsPageThree = React.createClass({
           <p>If you’re eligible to vote in UK local and general elections, make sure you’re on the electoral register once you’ve settled into your accommodation, using your new address. Don’t miss your chance to have your say. You can join the UK electoral register online.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.gov.uk/get-on-electoral-registe</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"news_two")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"news_two_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"essex")}>Next</Button>
           </BasicSegment>

@@ -23,7 +23,7 @@ var TechThreePage = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Saving your work</h2>
           <p>As part of your Office 365 email account you get 1Tb of cloud storage space for all your documents with OneDrive. OneDrive lets you create, edit, and share documents online. You also get at least 300 MB of local storage, known as your M: drive. You can access this by going to ‘My Documents’ on any lab computer.</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"tech_two")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"tech_two_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"tech_four")}>Next</Button>
           </BasicSegment>

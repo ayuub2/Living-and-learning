@@ -27,7 +27,7 @@ var CareerPageTwo = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Essex abroad</h2>
           <p>Want to teach English in France? Or work in Shanghai over the summer with an internship? From Thailand to Columbia the world is your oyster, so go on and get out there.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/essexabroad/"> www.essex.ac.uk/welcome/essexabroad</a></p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"career")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"career_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"career_three")}>Next</Button>
           </BasicSegment>

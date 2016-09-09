@@ -23,7 +23,7 @@ var TechOnePage = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Wi-fi on campus</h2>
           <p>Our campus wi-fi network is called eduroam. It’s free to use and you can connect to it with your Essex email address and password. For help setting up your device go to:<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/> www.essex.ac.uk/welcome/wifi</p>
           <BasicSegment style={{height:"60px"}}>
-              <Button onClick={this.onClick.bind(this,"study_four")}>Back</Button>
+              <Button onClick={this.onClick.bind(this,"study_four_back")}>Back</Button>
               <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
               <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"tech_two")}>Next</Button>
           </BasicSegment>

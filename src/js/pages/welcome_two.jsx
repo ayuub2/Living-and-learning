@@ -27,7 +27,7 @@ var WelcomePageTwo = React.createClass({
           <p>StudentCom provides a television service through the portal, and a selection of free-to-view channels are available. You’ll also have the option of paying for additional channels. If you use this service, have a TV in your room, or if you watch TV on your laptop, you must buy a TV licence.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.tvlicensing.co.uk</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"welcome")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"welcome_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"welcome_three")}>Next</Button>
           </BasicSegment>

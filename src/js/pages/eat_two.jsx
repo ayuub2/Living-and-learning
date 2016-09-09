@@ -37,7 +37,7 @@ var EatPageTwo = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/point.jpg"/> Waitrose supermarket – on the A133, 30-minute walk
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/point.jpg"/> Sainsbury’s – Priory Walk, Colchester town centre</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"eat")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"eat_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"eat_three")}>Next</Button>
           </BasicSegment>

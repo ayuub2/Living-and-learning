@@ -24,7 +24,7 @@ var EatPageThree = React.createClass({
           <p>Colchester town centre is around two miles away from our Colchester Campus, and offers a full range of shops for food, books, music and clothes, plus a good range of places to eat and socialise. Wivenhoe is a smaller town, situated about a mile away that has a small number of pubs, restaurants and shops in a riverside location.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.visitcolchester.com</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"eat_two")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"eat_two_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"green")}>Next</Button>
           </BasicSegment>

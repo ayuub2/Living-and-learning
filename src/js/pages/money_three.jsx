@@ -25,7 +25,7 @@ var MoneyPageThree = React.createClass({
           <p>As well as funds you’re entitled to, there may be other ways of generating income, such as charities and trusts, part-time employment and discretionary hardship funds. We’ve produced a lot of useful information on this, so make sure you take a look.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/money</p>
         <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"money_two")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"money_two_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"money_four")}>Next</Button>
           </BasicSegment>

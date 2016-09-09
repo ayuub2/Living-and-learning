@@ -24,7 +24,7 @@ var MoneyPageFour = React.createClass({
           <p>You can save large amounts of money when you shop on campus, in Colchester and online by using the NUS Extra student discount card. This card is available to all students and offers amazing discounts on clothes, food, music, entertainment and travel from national and local companies including Amazon, Odeon, Pizza Express, Superdrug, ASOS, and Spotify. The sooner you apply the sooner you’ll start to save money!
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.nus.org.uk/nus-extra</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"money_three")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"money_three_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"eat")}>Next</Button>
           </BasicSegment>

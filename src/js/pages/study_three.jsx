@@ -28,7 +28,7 @@ var StudyPageThree = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Find your way around campus</h2>
           <p>Find Your Way is our interactive campus map app. Download it to help you find any location on campus and get directions quickly and easily. Trust us, you’ll need it! There’s also a handy web version.<a href="http://findyourway.essex.ac.uk/"> www.essex.ac.uk/welcome/findyourway</a></p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"study_two")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"study_two_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"study_four")}>Next</Button>
           </BasicSegment>

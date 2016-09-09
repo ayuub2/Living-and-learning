@@ -26,7 +26,7 @@ var GreenPage = React.createClass({
           <p>In the vast area of parkland to the south side of campus you’ll find 40 acres of sports fields, two lakes and BBQ area, a disc golf course and the Vice Chancellor’s Lakeside House. It’s also home to many species of wildlife. Our University Campus Garden offers allotments to volunteers who wish to grow seasonal produce. It’s managed by a volunteer group of staff and students as a co-operative enterprise and anyone is welcome to join.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/> www.facebook.com/CampusFarm</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"eat_three")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"eat_three_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"around")}>Next</Button>
           </BasicSegment>

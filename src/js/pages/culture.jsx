@@ -28,7 +28,7 @@ var CulturePage = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.lakesidetheatre.org.uk
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.east15.ac.uk/productions.asp </p>
           <BasicSegment style={{height:"60px"}}>
-            <Button  onClick={this.onClick.bind(this,"sports_three")}>Back</Button>
+            <Button  onClick={this.onClick.bind(this,"sports_three_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"culture_two")}>Next</Button>
           </BasicSegment>

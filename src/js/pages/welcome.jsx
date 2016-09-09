@@ -24,7 +24,7 @@ var WelcomePage = React.createClass({
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>What to bring</h2>
           <p>You’ll need to supply your own bedding and towels, coat hangers, cooking utensils, crockery, cutlery, saucepans and frying pans</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"su_four")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"su_four_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"welcome_two")}>Next</Button>
           </BasicSegment>

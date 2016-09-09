@@ -31,7 +31,7 @@ var NewsPage = React.createClass({
           <p>Join our event page on Facebook to find out everything you need to know about welcome week at our Colchester Campus. We’ll keep you up-to-date with all the latest news and information so you know where to go and what to do during your first week at Essex.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/> www.essex.ac.uk/welcome/fb-events</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"map_two")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"map_two_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"news_two")}>Next</Button>
           </BasicSegment>

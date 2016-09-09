@@ -27,7 +27,7 @@ var SportsPageTwo = React.createClass({
           <p>Our sports teams compete in a variety of local, regional and national competitions, including British Universities & Colleges Sport (BUCS) competitions, as well as just for fun. There are more than 50 sports clubs that are free for you to join.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/blades</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"sports")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"sports_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"sports_three")}>Next</Button>
           </BasicSegment>

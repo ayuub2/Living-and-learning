@@ -67,10 +67,13 @@ var Screen = React.createClass({
       router.goto("/second/");
     }
     else if (page == "content") {
-      router.goto("/content/");
+      router.backTo("/content/");
     }
     else if(page == "study"){
       router.goto("/study/");
+    }
+    else if(page == "studyBack"){
+      router.backTo("/study/");
     }
     else if(page == "study_two"){
       router.goto("/study_two/");
@@ -218,6 +221,150 @@ var Screen = React.createClass({
     }
     else if(page == "essex"){
       router.goto("essex");
+    }
+    else if(page == "study_two_back"){
+      router.backTo("/study_two/");
+    }
+    else if(page == "study_three_back"){
+      router.backTo("/study_three/");
+    }
+    else if(page == "study_four_back"){
+      router.backTo("/study_four/");
+    }
+    else if(page == "health_back"){
+      router.backTo("/health/");
+    }
+    else if(page == "health_two_back"){
+      router.backTo("/health_two/");
+    }
+    else if(page == "health_three_back"){
+      router.backTo("/health_three/");
+    }
+    else if(page == "health_four_back"){
+      router.backTo("/health_four/");
+    }
+    else if(page == "health_five_back"){
+      router.backTo("/health_five/");
+    }
+    else if(page == "health_six_back"){
+      router.backTo("/health_six/");
+    }
+    else if(page == "health_seven_back"){
+      router.backTo("/health_seven/");
+    }
+    else if(page == "health_eight_back"){
+      router.backTo("/health_eight");
+    }
+    else if (page == "tech_one_back") {
+      router.backTo("/tech_one/");
+    }
+    else if (page == "tech_two_back") {
+      router.backTo("/tech_two/");
+    }
+    else if (page == "tech_three_back") {
+      router.backTo("/tech_three/");
+    }
+    else if (page == "tech_four_back") {
+      router.backTo("/tech_four/");
+    }
+    else if(page == "career_back"){
+      router.backTo("/career/");
+    }
+    else if(page == "career_two_back"){
+      router.backTo("/career_two/");
+    }
+    else if(page == "career_three_back"){
+      router.backTo("/career_three/");
+    }
+    else if(page == "su_back"){
+      router.backTo("/su/");
+    }
+    else if(page == "su_two_back"){
+      router.backTo("/su_two/");
+    }
+    else if(page == "su_three_back"){
+      router.backTo("/su_three/");
+    }
+    else if(page == "su_four_back"){
+      router.backTo("/su_four/");
+    }
+    else if(page == "welcome_back"){
+      router.backTo("/welcome/");
+    }
+    else if(page == "welcome_two_back"){
+      router.backTo("/welcome_two/");
+    }
+    else if(page == "welcome_three_back"){
+        router.backTo("/welcome_three/");
+    }
+    else if(page == "welcome_four_back"){
+      router.backTo("/welcome_four/");
+    }
+    else if(page == "sports_back"){
+      router.backTo("/sports/");
+    }
+    else if(page == "sports_two_back"){
+        router.backTo("/sports_two/");
+    }
+    else if(page == "sports_three_back"){
+      router.backTo("/sports_three/");
+    }
+    else if(page == "culture_back"){
+      router.backTo("/culture/");
+    }
+    else if(page == "culture_two_back"){
+      router.backTo("/culture_two/");
+    }
+    else if(page == "money_back"){
+      router.backTo("/money/");
+    }
+    else if(page == "money_two_back"){
+      router.backTo("/money_two/");
+    }
+    else if(page == "money_three_back"){
+      router.backTo("/money_three/");
+    }
+    else if(page == "money_four_back"){
+      router.backTo("/money_four/");
+    }
+    else if(page == "eat_back"){
+      router.backTo("/eat/");
+    }
+    else if(page == "eat_two_back"){
+      router.backTo("/eat_two/");
+    }
+    else if(page == "eat_three_back"){
+      router.backTo("/eat_three/");
+    }
+    else if(page == "green_back"){
+      router.backTo("/green/");
+    }
+    else if(page == "around_back"){
+      router.backTo("/around/");
+    }
+    else if(page == "around_two_back"){
+      router.backTo("/around_two/");
+    }
+    else if(page == "around_three_back"){
+      router.backTo("/around_three/");
+    }
+    else if(page == "map_back"){
+      router.backTo("/map/");
+    }
+    else if(page == "map_two_back"){
+      router.backTo("/map_two/");
+    }
+    else if(page == "news_back"){
+      router.backTo("/news/");
+    }
+    else if(page == "news_two_back"){
+      router.backTo("/news_two/");
+    }
+    else if(page == "news_three_back"){
+      router.backTo("/news_three/");
+    }
+    else if(page == "essex_back"){
+      router.backTo("essex");
     }
   },
 

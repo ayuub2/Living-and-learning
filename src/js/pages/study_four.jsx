@@ -26,7 +26,7 @@ var StudyPageFour = React.createClass({
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Talk to the world</h2>
           <p>Learn a language at Essex to increase your global and cultural awareness. Language learning can give you the confidence to work and travel internationally, expand your options for studying abroad, and get a competitive edge when you’re looking for a job. There are a number of ways to do it, so look online to discover the best option for you.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/study/why/languages.aspx"> www.essex.ac.uk/welcome/languages</a></p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"study_three")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"study_three_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"tech_one")}>Next</Button>
           </BasicSegment>
