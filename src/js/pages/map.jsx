@@ -18,7 +18,7 @@ var MapsPage = React.createClass({
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Maps</h2>
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
-          <p>There are three ways to stop getting lost. First, ask someone. They may not know either, but it’s always good to say hello to someone new. Second, download the Find Your Way app – details in this guide. Third, use our campus map on page 7 and get to grips with the room numbering system – it’s a great way to impress your friends.</p>
+          <p>There are three ways to stop getting lost. First, ask someone. They may not know either, but it’s always good to say hello to someone new. Second, download the Find Your Way app – details in this guide.</p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Who knows what the numbers mean?</h2>
           <p>If you’re looking for a specific room, follow these rules.</p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>If the room number has three parts and the first is alphabetical</h2>

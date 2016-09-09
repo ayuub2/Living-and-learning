@@ -18,9 +18,12 @@ var MoneyPageThree = React.createClass({
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Check your entitlements</h2>
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
-          <p>Student finance can get rather complicated but it’s important to make sure you’re receiving any monies you’re entitled to. Advisers in the Student Services Hub can talk you through what’s available and there is information online. You can also check the NUS website for information about benefits and entitlements.<br/>www.essex.ac.uk/welcome/money<br/>www.nus.org.uk/en/advice/money-and- funding</p>
+          <p>Student finance can get rather complicated but it’s important to make sure you’re receiving any monies you’re entitled to. Advisers in the Student Services Hub can talk you through what’s available and there is information online. You can also check the NUS website for information about benefits and entitlements.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/money
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.nus.org.uk/en/advice/money-and- funding</p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Make it go further</h2>
-          <p>As well as funds you’re entitled to, there may be other ways of generating income, such as charities and trusts, part-time employment and discretionary hardship funds. We’ve produced a lot of useful information on this, so make sure you take a look.<br/>www.essex.ac.uk/welcome/money</p>
+          <p>As well as funds you’re entitled to, there may be other ways of generating income, such as charities and trusts, part-time employment and discretionary hardship funds. We’ve produced a lot of useful information on this, so make sure you take a look.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/money</p>
         <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"money_two")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>

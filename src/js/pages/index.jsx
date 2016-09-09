@@ -16,12 +16,10 @@ var IndexPage = React.createClass({
 
   render:function(){
     return (
-      <Page>
-        <BasicSegment style={{padding:"0px", margin:"0px"}}>
-          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"second")}>
-            <img src="http://www.essex.ac.uk/campusm/edits/home/home.jpg" height="100%" width="100%"/>
-          </Button>
-        </BasicSegment>
+      <Page style={{padding:"0px", margin:"0px"}}>>
+        <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,"second")}>
+          <img src="http://www.essex.ac.uk/campusm/edits/home/home.jpg" height="100%" width="100%"/>
+        </Button>
       </Page>
     );
   }

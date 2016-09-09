@@ -18,9 +18,11 @@ var NewsPageThree = React.createClass({
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Find your voice</h2>
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
-          <p>We run a series of surveys to get your feedback, some of which feed into national university league tables, so speak up!<br/>www.essex.ac.uk/welcome/surveys </p>
+          <p>We run a series of surveys to get your feedback, some of which feed into national university league tables, so speak up!
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/surveys </p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Use your vote</h2>
-          <p>If you’re eligible to vote in UK local and general elections, make sure you’re on the electoral register once you’ve settled into your accommodation, using your new address. Don’t miss your chance to have your say. You can join the UK electoral register online.<br/>www.gov.uk/get-on-electoral-registe</p>
+          <p>If you’re eligible to vote in UK local and general elections, make sure you’re on the electoral register once you’ve settled into your accommodation, using your new address. Don’t miss your chance to have your say. You can join the UK electoral register online.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.gov.uk/get-on-electoral-registe</p>
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"news_two")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>

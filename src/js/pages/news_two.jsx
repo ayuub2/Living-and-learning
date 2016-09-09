@@ -18,11 +18,14 @@ var NewsPageTwo = React.createClass({
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Student webpages </h2>
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
-          <p>Featuring a wealth of student information. Make this your homepage. Forever, if you like.<br/>www.essex.ac.uk/welcome/students </p>
+          <p>Featuring a wealth of student information. Make this your homepage. Forever, if you like.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/students </p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>What’s on?</h2>
-          <p>Our ‘What’s on?’ calendar brings together all the events happening across our three campuses, so you can make the most of your time at Essex. u www.essex.ac.uk/welcome/events </p>
+          <p>Our ‘What’s on?’ calendar brings together all the events happening across our three campuses, so you can make the most of your time at Essex.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/>www.essex.ac.uk/welcome/events </p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Rebel</h2>
-          <p>Rebel is a creative community that is available to all students at Essex. If you are interested in journalism, video, TV, radio, photography, design or any form of creativity, come and find us in the SU Creative Studios in the Silberrad Student Centre, or find out more online.<br/>www.essexstudent.com</p>
+          <p>Rebel is a creative community that is available to all students at Essex. If you are interested in journalism, video, TV, radio, photography, design or any form of creativity, come and find us in the SU Creative Studios in the Silberrad Student Centre, or find out more online.
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essexstudent.com</p>
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"news")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
