@@ -21,11 +21,11 @@ var SportsPage = React.createClass({
           <p>Into competitive sport, or just fancy knocking a tennis ball around with a few friends? Sport at Essex welcomes everyone.</p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>My Essex free sport</h2>
           <p>A wide range of sport sessions are available to student members free of charge. This is your chance to stay healthy, enjoy new experiences and make new friends – at no extra cost. Just Play sessions are also free, and membership of sports clubs, travel costs and match fees for the British Universities and Colleges Sports association are also included. To enrol on My Essex Sport, visit the Sports Centre to activate your card.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/sport</p>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/><a href="http://www.essex.ac.uk/sport/"> www.essex.ac.uk/welcome/sport</a></p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Just Play</h2>
           <p>Have a go at something new. Our social sport programme, Just Play, lets you play alongside students, staff and members of the public in informal, friendly sporting activities throughout the year, on weekday lunchtimes and evenings.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/justplay
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/> www.facebook.com/justplayessex
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/><a href="http://www.essex.ac.uk/sport/about/just-play.aspx"> www.essex.ac.uk/welcome/justplay</a>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="http://www.essex.ac.uk/sport/about/just-play.aspx"> www.facebook.com/justplayessex</a>
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/twitter.jpg"/> @justplayessex</p>
           <BasicSegment style={{height:"60px"}}>
             <Button  onClick={this.onClick.bind(this,"welcome_four_back")}>Back</Button>

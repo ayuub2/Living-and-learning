@@ -19,10 +19,10 @@ var MoneyPageFour = React.createClass({
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
           <p>For most UK undergraduates your first payment will be released a few days after you register with the University, so make sure you have enough money to see you through the first week or two. If you haven’t had your first instalment within a week of registering, first contact your funding provider to see if there’s a reason why your funding is delayed. An adviser in the Student Services Hub may be able to help explain what needs to be done and offer some short-term financial assistance until the problems are sorted out.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/hub</p>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/><a href="http://www.essex.ac.uk/students/contact/"> www.essex.ac.uk/welcome/hub</a></p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>NUS Extra</h2>
           <p>You can save large amounts of money when you shop on campus, in Colchester and online by using the NUS Extra student discount card. This card is available to all students and offers amazing discounts on clothes, food, music, entertainment and travel from national and local companies including Amazon, Odeon, Pizza Express, Superdrug, ASOS, and Spotify. The sooner you apply the sooner you’ll start to save money!
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.nus.org.uk/nus-extra</p>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/><a href="http://www.nus.org.uk/nus-extra/"> www.nus.org.uk/nus-extra</a></p>
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"money_three_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>

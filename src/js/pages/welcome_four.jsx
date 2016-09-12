@@ -19,7 +19,7 @@ var WelcomePageFour = React.createClass({
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
           <p>Wivenhoe House, the original home of the University of Essex, is now a 4-star luxury 40-bedroom, on campus, hotel. Great for visiting relatives, it’s also home to a fantastic brasserie for a special night out.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.wivenhoehouse.co.uk</p>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/><a href="http://www.wivenhoehouse.co.uk/"> www.wivenhoehouse.co.uk</a></p>
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"welcome_three_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
