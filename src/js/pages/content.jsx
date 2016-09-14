@@ -142,7 +142,7 @@ onClick:function(page,ev){
                 </tr>
                 <tr>
                   <th style={{color:"#33ccff", fontSize:"135%"}}>09</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"health")} style={{display:"block"}}>Staying health and happy</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"health_southend")} style={{display:"block"}}>Staying health and happy</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#33ccff", fontSize:"135%"}}>17</th>
