@@ -58,6 +58,11 @@ var NewsPageTwo = require("./pages/news_two");
 var NewsPageThree = require("./pages/news_three");
 var EssexPage = require("./pages/essex");
 
+var StudyPageSouthend = require("./pages/study_southend");
+var StudyPageTwoSouthend = require("./pages/study_two_southend");
+var StudyPageThreeSouthend = require("./pages/study_three_southend");
+var StudyPageFourSouthend = require("./pages/study_four_southend");
+var TechPageSouthend = require("./pages/tech_southend");
 
 
 var Screen = React.createClass({
@@ -364,7 +369,37 @@ var Screen = React.createClass({
       router.backTo("/news_three/");
     }
     else if(page == "essex_back"){
-      router.backTo("essex");
+      router.backTo("/essex/");
+    }
+    else if(page == "study_southend"){
+      router.goto("/study_southend/");
+    }
+    else if(page == "study_southendBack"){
+      router.backTo("/study_southend/");
+    }
+    else if(page == "study_two_southend"){
+      router.goto("/study_two_southend/");
+    }
+    else if(page == "study_two_southend_back"){
+      router.backTo("/study_two_southend/");
+    }
+    else if(page == "study_three_southend"){
+      router.goto("/study_three_southend/");
+    }
+    else if(page == "study_three_southend_back"){
+      router.backTo("/study_three_southend/");
+    }
+    else if(page == "study_four_southend"){
+      router.goto("/study_four_southend/");
+    }
+    else if(page == "study_four_southend_back"){
+      router.backTo("/study_four_southend/");
+    }
+    else if(page == "tech_southend"){
+      router.goto("/tech_southend/");
+    }
+    else if(page == "tech_southend_back"){
+      router.backTo("/tech_southend/");
     }
   },
 
@@ -425,7 +460,12 @@ var Screen = React.createClass({
                 <NewsPage path="/news/" onSelect={this.selectButton}/>
                 <NewsPageTwo path="/news_two/" onSelect={this.selectButton}/>
                 <NewsPageThree path="/news_three/" onSelect={this.selectButton}/>
-                <EssexPage path="/essex/"onSelect={this.selectButton}/>
+                <EssexPage path="/essex/" onSelect={this.selectButton}/>
+                <StudyPageSouthend path="/study_southend/" onSelect={this.selectButton}/>
+                <StudyPageTwoSouthend path="/study_two_southend/" onSelect={this.selectButton}/>
+                <StudyPageThreeSouthend path="/study_three_southend/" onSelect={this.selectButton}/>
+                <StudyPageFourSouthend path="/study_four_southend/" onSelect={this.selectButton}/>
+                <TechPageSouthend path="/tech_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>

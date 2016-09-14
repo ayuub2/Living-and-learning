@@ -28,7 +28,8 @@ onClick:function(page,ev){
 
   render:function(){
     console.log(location.name);
-    if(location.name == "colchester"){
+    //TODO:change back to colchester
+    if(location.name == "southend"){
       return (
         <Page>
           <BasicSegment nopadding style={{height:"40%", width:"100%"}}>
@@ -133,11 +134,11 @@ onClick:function(page,ev){
               <table  style={{width:"100%", marginTop:"-20px"}}>
                 <tr>
                   <th style={{color:"#33ccff", fontSize:"135%", width:"30px"}}>01</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"study")} style={{display:"block"}}>Your studies</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"study_southend")} style={{display:"block"}}>Your studies</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#33ccff", fontSize:"135%"}}>05</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"tech_one")} style={{display:"block"}}>Tech World</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"tech_southend")} style={{display:"block"}}>Tech World</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#33ccff", fontSize:"135%"}}>09</th>
