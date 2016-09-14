@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "@ombiel/aek-css": "0.2.x",
-    "@ombiel/aek-lib": "0.2.x"
+    "@ombiel/aek-lib": "0.2.x",
+    "campus-awareness": "git+https://itsgit.essex.ac.uk/jdmayd/campus-awareness"
   },
   "devDependencies": {
     "@ombiel/aek-buildtools": "0.2.x",
