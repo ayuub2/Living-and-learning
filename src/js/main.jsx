@@ -72,6 +72,19 @@ var HealthPageThreeSouthend = require("./pages/health_three_southend");
 var HealthPageFourSouthend = require("./pages/health_four_southend");
 
 
+
+
+
+
+
+
+
+
+
+var CareerPageSouthend = require("./pages/career_southend");
+var CareerPageTwoSouthend = require("./pages/career_two_southend");
+var CareerPageThreeSouthend = require("./pages/career_two_southend");
+
 var Screen = React.createClass({
 
   selectButton:function(page){
@@ -450,6 +463,25 @@ var Screen = React.createClass({
     else if(page == "health_four_southend_back"){
       router.backTo("/health_four_southend");
     }
+    else if(page == "career_southend"){
+      router.goto("/career_southend/");
+    }
+    else if(page == "career_southend_back"){
+      router.backTo("/career_southend");
+    }
+    else if(page == "career_two_southend"){
+      router.goto("/career_two_southend/");
+    }
+    else if(page == "career_two_southend_back"){
+      router.backTo("/career_two_southend");
+    }
+    else if(page == "career_three_southend"){
+      router.goto("/career_three_southend/");
+    }
+    else if(page == "career_three_southend_back"){
+      router.backTo("/career_three_southend");
+
+    }
   },
 
   render:function() {
@@ -522,6 +554,9 @@ var Screen = React.createClass({
                 <HealthPageTwoSouthend path="/health_two_southend/" onSelect={this.selectButton}/>
                 <HealthPageThreeSouthend path="/health_three_southend/" onSelect={this.selectButton}/>
                 <HealthPageFourSouthend path="/health_four_southend" onSelect={this.selectButton}/>
+                <CareerPageSouthend path="/career_southend/" onSelect={this.selectButton}/>
+                <CareerPageTwoSouthend path="/career_two_southend/" onSelect={this.selectButton}/>
+                <CareerPageThreeSouthend path="/career_three_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
