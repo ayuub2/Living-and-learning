@@ -19,8 +19,6 @@ var HealthPageThreeSouthend = React.createClass({
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
           <p>We are Essex. We encourage a culture of dignity and respect. We’re committed to upholding an environment that’s free from any form of harassment or bullying. Though rare, these incidents can occur and if they do our network of trained harassment advisors are on hand to help.<a href="http://www.essex.ac.uk/equality/"> www.essex.ac.uk/welcome/equality</a></p>
-          <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Faith</h2>
-          <p>We’re proud of our vibrant and diverse multicultural community and we recognise and support the many different religions and beliefs on campus. The calm, friendly and supportive atmosphere in our Multi-Faith Chaplaincy is a welcoming place for staff, students and the wider community to meet, interact and engage with each other.<a href="http://www.essex.ac.uk/students/experience/mfc/default.aspx"> www.essex.ac.uk/welcome/mfc</a></p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Staying safe</h2>
           <p>Stay safe, stay happy. Follow some common- sense tips whether you’re living on or off campus.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/point.jpg"/> Avoid walking or cycling alone in isolated areas or unlit or poorly lit footpaths.

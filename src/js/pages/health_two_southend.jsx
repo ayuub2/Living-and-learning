@@ -28,7 +28,7 @@ var HealthPageTwoSouthend = React.createClass({
           <p>Established at Essex in 1970, Nightline is a friendly help and support service run by students, for students, located at Colchester Campus. We work under strict confidentiality, ensuring complete anonymity, and we’re always willing to listen.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/students/health-and-wellbeing/nightline.aspx"> www.essex.ac.uk/welcome/nightline</a></p>
           <BasicSegment style={{height:"60px"}}>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-            <Button onClick={this.onClick.bind(this,"health_three")} style={{position:"absolute", right:"0px"}}>Next</Button>
+            <Button onClick={this.onClick.bind(this,"health_three_southend")} style={{position:"absolute", right:"0px"}}>Next</Button>
             <Button onClick={this.onClick.bind(this,"health_southend_back")} style={{display:"block"}}>Back</Button>
           </BasicSegment>
         </BasicSegment>
