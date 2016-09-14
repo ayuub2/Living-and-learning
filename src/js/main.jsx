@@ -63,7 +63,9 @@ var StudyPageTwoSouthend = require("./pages/study_two_southend");
 var StudyPageThreeSouthend = require("./pages/study_three_southend");
 var StudyPageFourSouthend = require("./pages/study_four_southend");
 var TechPageSouthend = require("./pages/tech_southend");
-
+var TechPageTwoSouthend = require("./pages/tech_two_southend");
+var TechPageThreeSouthend = require("./pages/tech_three_southend");
+var TechPageFourSouthend = require("./pages/tech_four_southend");
 
 var Screen = React.createClass({
 
@@ -401,6 +403,24 @@ var Screen = React.createClass({
     else if(page == "tech_southend_back"){
       router.backTo("/tech_southend/");
     }
+    else if(page == "tech_two_southend"){
+      router.goto("/tech_two_southend/");
+    }
+    else if(page == "tech_two_southend_back"){
+      router.backTo("/tech_two_southend/");
+    }
+    else if(page == "tech_three_southend"){
+      router.goto("/tech_three_southend/");
+    }
+    else if(page == "tech_three_southend_back"){
+      router.backTo("/tech_three_southend/");
+    }
+    else if(page == "tech_four_southend"){
+      router.goto("/tech_four_southend/");
+    }
+    else if(page == "tech_four_southend_back"){
+      router.goto("/tech_four_southend/");
+    }
   },
 
   render:function() {
@@ -466,6 +486,9 @@ var Screen = React.createClass({
                 <StudyPageThreeSouthend path="/study_three_southend/" onSelect={this.selectButton}/>
                 <StudyPageFourSouthend path="/study_four_southend/" onSelect={this.selectButton}/>
                 <TechPageSouthend path="/tech_southend/" onSelect={this.selectButton}/>
+                <TechPageTwoSouthend path="/tech_two_southend/" onSelect={this.selectButton}/>
+                <TechPageThreeSouthend path="/tech_three_southend/" onSelect={this.selectButton}/>
+                <TechPageFourSouthend path="/tech_four_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
