@@ -70,20 +70,10 @@ var HealthPageSouthend = require("./pages/health_southend");
 var HealthPageTwoSouthend = require("./pages/health_two_southend");
 var HealthPageThreeSouthend = require("./pages/health_three_southend");
 var HealthPageFourSouthend = require("./pages/health_four_southend");
-
-
-
-
-
-
-
-
-
-
-
 var CareerPageSouthend = require("./pages/career_southend");
 var CareerPageTwoSouthend = require("./pages/career_two_southend");
 var CareerPageThreeSouthend = require("./pages/career_two_southend");
+var WelcomePageSouthend = require("./pages/welcome_southend");
 
 var Screen = React.createClass({
 
@@ -482,6 +472,12 @@ var Screen = React.createClass({
       router.backTo("/career_three_southend");
 
     }
+    else if(page == "welcome_southend"){
+      router.goto("/welcome_southend/");
+    }
+    else if(page == "welcome_southend_back"){
+      router.backTo("/welcome_southend/");
+    }
   },
 
   render:function() {
@@ -557,6 +553,7 @@ var Screen = React.createClass({
                 <CareerPageSouthend path="/career_southend/" onSelect={this.selectButton}/>
                 <CareerPageTwoSouthend path="/career_two_southend/" onSelect={this.selectButton}/>
                 <CareerPageThreeSouthend path="/career_three_southend/" onSelect={this.selectButton}/>
+                <WelcomePageSouthend path="/welcome_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
