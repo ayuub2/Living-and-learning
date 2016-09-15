@@ -3,7 +3,7 @@ var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
 
-var HealthPageSeven = React.createClass({
+var HealthPageSevenSouthend = React.createClass({
 
   onClick:function(page,ev){
       ev.preventDefault();
@@ -32,13 +32,13 @@ var HealthPageSeven = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/welcome/emergencies.aspx"> www.essex.ac.uk/welcome/emergencies</a>
           </p>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"health_six_back")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"health_six_southend_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_eight")}>Next</Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"health_eight_southend")}>Next</Button>
           </BasicSegment>
         </BasicSegment>
       </Page>
     );
   }
 });
-module.exports = HealthPageSeven;
+module.exports = HealthPageSevenSouthend;
