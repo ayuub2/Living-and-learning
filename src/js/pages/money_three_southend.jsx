@@ -6,10 +6,9 @@ var Button = require("-components/button");
 var MoneyPageThreeSouthend = React.createClass({
 
   onClick:function(page,ev){
-      ev.preventDefault();
-      this.props.onSelect(page);
-
-    },
+    ev.preventDefault();
+    this.props.onSelect(page);
+  },
 
   render:function(){
     return (

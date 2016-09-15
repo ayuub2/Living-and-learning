@@ -91,6 +91,10 @@ onClick:function(page,ev){
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>33</th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"enjoy")}>Enjoy yourself</a></th>
+                </tr>
+                <tr>
+                  <th style={{color:"#ff3399", fontSize:"135%"}}>33</th>
                   <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"money")}>Money matters</a></th>
                 </tr>
                 <tr>
