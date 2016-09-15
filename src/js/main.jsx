@@ -70,6 +70,11 @@ var HealthPageSouthend = require("./pages/health_southend");
 var HealthPageTwoSouthend = require("./pages/health_two_southend");
 var HealthPageThreeSouthend = require("./pages/health_three_southend");
 var HealthPageFourSouthend = require("./pages/health_four_southend");
+
+var HealthPageFiveSouthend = require("./pages/health_five_southend");
+var HealthPageSixSouthend = require("./pages/health_Six_southend");
+
+
 var CareerPageSouthend = require("./pages/career_southend");
 var CareerPageTwoSouthend = require("./pages/career_two_southend");
 var CareerPageThreeSouthend = require("./pages/career_two_southend");
@@ -453,6 +458,18 @@ var Screen = React.createClass({
     else if(page == "health_four_southend_back"){
       router.backTo("/health_four_southend");
     }
+    else if(page == "health_five_southend"){
+      router.goto("/health_five_southend/");
+    }
+    else if(page == "health_five_southend_back"){
+      router.backTo("/health_five_southend");
+    }
+    else if(page == "health_six_southend"){
+      router.goto("/health_six_southend/");
+    }
+    else if(page == "health_six_southend_back"){
+      router.backTo("/health_six_southend");
+    }
     else if(page == "career_southend"){
       router.goto("/career_southend/");
     }
@@ -470,7 +487,6 @@ var Screen = React.createClass({
     }
     else if(page == "career_three_southend_back"){
       router.backTo("/career_three_southend");
-
     }
     else if(page == "welcome_southend"){
       router.goto("/welcome_southend/");
@@ -550,6 +566,8 @@ var Screen = React.createClass({
                 <HealthPageTwoSouthend path="/health_two_southend/" onSelect={this.selectButton}/>
                 <HealthPageThreeSouthend path="/health_three_southend/" onSelect={this.selectButton}/>
                 <HealthPageFourSouthend path="/health_four_southend" onSelect={this.selectButton}/>
+                <HealthPageFiveSouthend path="/health_five_southend" onSelect={this.selectButton}/>
+                <HealthPageSixSouthend path="/health_six_southend" onSelect={this.selectButton}/>
                 <CareerPageSouthend path="/career_southend/" onSelect={this.selectButton}/>
                 <CareerPageTwoSouthend path="/career_two_southend/" onSelect={this.selectButton}/>
                 <CareerPageThreeSouthend path="/career_three_southend/" onSelect={this.selectButton}/>
