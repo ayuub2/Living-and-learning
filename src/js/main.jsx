@@ -70,15 +70,16 @@ var HealthPageSouthend = require("./pages/health_southend");
 var HealthPageTwoSouthend = require("./pages/health_two_southend");
 var HealthPageThreeSouthend = require("./pages/health_three_southend");
 var HealthPageFourSouthend = require("./pages/health_four_southend");
-
 var HealthPageFiveSouthend = require("./pages/health_five_southend");
 var HealthPageSixSouthend = require("./pages/health_Six_southend");
-
-
 var CareerPageSouthend = require("./pages/career_southend");
 var CareerPageTwoSouthend = require("./pages/career_two_southend");
-var CareerPageThreeSouthend = require("./pages/career_two_southend");
+var CareerPageThreeSouthend = require("./pages/career_three_southend");
 var WelcomePageSouthend = require("./pages/welcome_southend");
+var WelcomePageTwoSouthend = require("./pages/welcome_two_southend");
+var WelcomePageThreeSouthend = require("./pages/welcome_three_southend");
+var WelcomePageFourSouthend = require("./pages/welcome_four_southend");
+var SportsPageSouthend = require("./pages/sports_southend");
 
 var Screen = React.createClass({
 
@@ -494,6 +495,30 @@ var Screen = React.createClass({
     else if(page == "welcome_southend_back"){
       router.backTo("/welcome_southend/");
     }
+    else if(page == "welcome_two_southend"){
+      router.goto("/welcome_two_southend/");
+    }
+    else if(page == "welcome_two_southend_back"){
+      router.backTo("/welcome_two_southend/");
+    }
+    else if(page == "welcome_three_southend"){
+      router.goto("/welcome_three_southend/");
+    }
+    else if(page == "welcome_three_southend_back"){
+      router.backTo("/welcome_three_southend/");
+    }
+    else if(page == "welcome_four_southend"){
+      router.goto("/welcome_four_southend/");
+    }
+    else if(page == "welcome_four_southend_back"){
+      router.backTo("/welcome_four_southend/");
+    }
+    else if(page == "sports_southend"){
+      router.goto("/sports_southend/");
+    }
+    else if(page == "sports_southend_back"){
+      router.backTo("/sports_southend/");
+    }
   },
 
   render:function() {
@@ -572,6 +597,10 @@ var Screen = React.createClass({
                 <CareerPageTwoSouthend path="/career_two_southend/" onSelect={this.selectButton}/>
                 <CareerPageThreeSouthend path="/career_three_southend/" onSelect={this.selectButton}/>
                 <WelcomePageSouthend path="/welcome_southend/" onSelect={this.selectButton}/>
+                <WelcomePageTwoSouthend path="/welcome_two_southend/" onSelect={this.selectButton}/>
+                <WelcomePageThreeSouthend path="/welcome_three_southend/" onSelect={this.selectButton}/>
+                <WelcomePageFourSouthend path="/welcome_four_southend" onSelect={this.selectButton}/>
+                <SportsPageSouthend path="/sports_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>

@@ -172,11 +172,11 @@ onClick:function(page,ev){
               <table  style={{width:"100%", marginTop:"-20px"}}>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%", width:"30px"}}>24</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"welcome")}>Welcome Home</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"welcome_southend")}>Welcome Home</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>28</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"sports")}>Sports at Essex</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"sports_southend")}>Sports at Essex</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>31</th>

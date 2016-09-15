@@ -31,17 +31,17 @@ var SuPageFour = React.createClass({
     var url;
     var page;
     if(location.name == "Colchester"){
-      url = "http://www.essex.ac.uk/campusm/su_two/su.jpg";
+      url = "http://www.essex.ac.uk/campusm/su_two/su_four.jpg";
       page = "welcome_southend";
     }
     else{
-      url = "http://www.essex.ac.uk/campusm/su/su.jpg";
+      url = "http://www.essex.ac.uk/campusm/su/su_four.jpg";
       page = "welcome";
     }
     return (
       <Page>
         <BasicSegment style={{padding:"0px", margin:"0px"}}>
-          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,{page})}>
+          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,page)}>
             <img src={url} height="100%" width="100%"/>
           </Button>
         </BasicSegment>
