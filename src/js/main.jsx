@@ -76,11 +76,15 @@ var HealthPageSixSouthend = require("./pages/health_six_southend");
 var HealthPageSevenSouthend = require("./pages/health_seven_southend");
 var HealthPageEightSouthend = require("./pages/health_eight_southend");
 
-
 var CareerPageSouthend = require("./pages/career_southend");
 var CareerPageTwoSouthend = require("./pages/career_two_southend");
 var CareerPageThreeSouthend = require("./pages/career_two_southend");
 var WelcomePageSouthend = require("./pages/welcome_southend");
+
+var MoneyPageSouthend = require("./pages/money_southend");
+var MoneyPageTwoSouthend = require("./pages/money_two_southend");
+var MoneyPageThreeSouthend = require("./pages/money_three_southend");
+var MoneyPageFourSouthend = require("./pages/money_four_southend");
 
 var Screen = React.createClass({
 
@@ -508,6 +512,30 @@ var Screen = React.createClass({
     else if(page == "welcome_southend_back"){
       router.backTo("/welcome_southend/");
     }
+    else if(page == "money_southend"){
+      router.goto("/money_southend/");
+    }
+    else if(page == "money_southend_back"){
+      router.goto("/money_southend/");
+    }
+    else if(page == "money_two_southend"){
+      router.goto("/money_two_southend/");
+    }
+    else if(page == "money_two_southend_back"){
+      router.goto("/money_two_southend/");
+    }
+    else if(page == "money_three_southend"){
+      router.goto("/money_three_southend/");
+    }
+    else if(page == "money_three_southend_back"){
+      router.goto("/money_three_southend/");
+    }
+    else if(page == "money_four_southend"){
+      router.goto("/money_four_southend/");
+    }
+    else if(page == "money_four_southend_back"){
+      router.goto("/money_four_southend/");
+    }
   },
 
   render:function() {
@@ -588,6 +616,10 @@ var Screen = React.createClass({
                 <CareerPageTwoSouthend path="/career_two_southend/" onSelect={this.selectButton}/>
                 <CareerPageThreeSouthend path="/career_three_southend/" onSelect={this.selectButton}/>
                 <WelcomePageSouthend path="/welcome_southend/" onSelect={this.selectButton}/>
+                <MoneyPageSouthend path="/money_southend/" onSelect={this.selectButton}/>
+                <MoneyPageTwoSouthend path="/money_two_southend/" onSelect={this.selectButton}/>
+                <MoneyPageThreeSouthend path="/money_three_southend/" onSelect={this.selectButton}/>
+                <MoneyPageFourSouthend path="/money_four_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
