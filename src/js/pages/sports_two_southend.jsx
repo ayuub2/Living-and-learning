@@ -26,7 +26,7 @@ var SportsPageTwoSouthend = React.createClass({
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"sports_southend_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-            <Button style={{position:"absolute", right:"0px"}}  onClick={this.onClick.bind(this,"culture")}>Next</Button>
+            <Button style={{position:"absolute", right:"0px"}}  onClick={this.onClick.bind(this,"enjoy_southend")}>Next</Button>
           </BasicSegment>
         </BasicSegment>
       </Page>
