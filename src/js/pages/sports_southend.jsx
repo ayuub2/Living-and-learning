@@ -21,16 +21,16 @@ var SportsPageSouthend = React.createClass({
           <p>Into competitive sport, or just fancy kicking a ball around with a few friends? Sport at Essex welcomes everyone.</p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Evolve Gym</h2>
           <p>Packed with state-of-the-art equipment and based at University Square, Evolve makes it easy to help you get fitter. Prices are very competitive and great value, and classes run every weekday and come free with membership.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/>www.essex.ac.uk/welcome/evolvegym</p>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/> www.essex.ac.uk/welcome/evolvegym</p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Just Play</h2>
           <p>Have a go at something new. Our social sport programme, Just Play, lets you play alongside students, staff and members of the public in informal, friendly sporting activities throughout the year, on weekday lunchtimes and evenings.
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/><a href="http://www.essex.ac.uk/sport/about/just-play.aspx"> www.essex.ac.uk/welcome/justplay</a>
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="http://www.essex.ac.uk/sport/about/just-play.aspx"> www.facebook.com/justplayessex</a>
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/twitter.jpg"/> @JustPlaySou</p>
           <BasicSegment style={{height:"60px"}}>
-            <Button  onClick={this.onClick.bind(this,"welcome_four_back")}>Back</Button>
+            <Button  onClick={this.onClick.bind(this,"welcome_four_southend_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"sports_two")}>Next</Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"sports_two_southend")}>Next</Button>
           </BasicSegment>
         </BasicSegment>
       </Page>

@@ -74,7 +74,6 @@ var HealthPageFiveSouthend = require("./pages/health_five_southend");
 var HealthPageSixSouthend = require("./pages/health_six_southend");
 var HealthPageSevenSouthend = require("./pages/health_seven_southend");
 var HealthPageEightSouthend = require("./pages/health_eight_southend");
-
 var CareerPageSouthend = require("./pages/career_southend");
 var CareerPageTwoSouthend = require("./pages/career_two_southend");
 var CareerPageThreeSouthend = require("./pages/career_three_southend");
@@ -83,7 +82,7 @@ var WelcomePageTwoSouthend = require("./pages/welcome_two_southend");
 var WelcomePageThreeSouthend = require("./pages/welcome_three_southend");
 var WelcomePageFourSouthend = require("./pages/welcome_four_southend");
 var SportsPageSouthend = require("./pages/sports_southend");
-
+var SportsPageTwoSouthend = require("./pages/sports_two_southend");
 var MoneyPageSouthend = require("./pages/money_southend");
 var MoneyPageTwoSouthend = require("./pages/money_two_southend");
 var MoneyPageThreeSouthend = require("./pages/money_three_southend");
@@ -539,6 +538,12 @@ var Screen = React.createClass({
     else if(page == "sports_southend_back"){
       router.backTo("/sports_southend/");
     }
+    else if(page == "sports_two_southend"){
+      router.goto("/sports_two_southend/");
+    }
+    else if(page == "sports_two_southend_back"){
+      router.backTo("/sports_two_southend/");
+    }
     else if(page == "money_southend"){
       router.goto("/money_southend/");
     }
@@ -648,6 +653,7 @@ var Screen = React.createClass({
                 <WelcomePageThreeSouthend path="/welcome_three_southend/" onSelect={this.selectButton}/>
                 <WelcomePageFourSouthend path="/welcome_four_southend" onSelect={this.selectButton}/>
                 <SportsPageSouthend path="/sports_southend/" onSelect={this.selectButton}/>
+                <SportsPageTwoSouthend path="sports_two_southend" onSelect={this.selectButton}/>
                 <MoneyPageSouthend path="/money_southend/" onSelect={this.selectButton}/>
                 <MoneyPageTwoSouthend path="/money_two_southend/" onSelect={this.selectButton}/>
                 <MoneyPageThreeSouthend path="/money_three_southend/" onSelect={this.selectButton}/>
