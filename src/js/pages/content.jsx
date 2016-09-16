@@ -179,40 +179,28 @@ onClick:function(page,ev){
                   <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"sports_southend")}>Sports at Essex</a></th>
                 </tr>
                 <tr>
-                  <th style={{color:"#ff3399", fontSize:"135%"}}>31</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"culture")}>Cultural Essex</a></th>
-                </tr>
-                <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>33</th>
                   <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"enjoy_southend")}>Enjoy yourself</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>33</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"money")}>Money matters</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"money_southend")}>Money matters</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>37</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"eat")}>Eat, drink, buy</a></th>
-                </tr>
-                <tr>
-                  <th style={{color:"#ff3399", fontSize:"135%"}}>40</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"green")}>Green space</a></th>
-                </tr>
-                <tr>
-                  <th style={{color:"#ff3399", fontSize:"135%"}}>41</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"around")}>Get around</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"eat_southend")}>Eat, drink, buy</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>44</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"map")}>Maps</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"map_southend")}>Maps</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>46</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"news")}>News and media</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"news_southend")}>News and media</a></th>
                 </tr>
                 <tr>
                   <th style={{color:"#ff3399", fontSize:"135%"}}>49</th>
-                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"essex")}>Essex is for life</a></th>
+                  <th style={{fontSize:"120%"}}><a onClick={this.onClick.bind(this,"essex_southend")}>Essex is for life</a></th>
                 </tr>
               </table>
           </BasicSegment>
