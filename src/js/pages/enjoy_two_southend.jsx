@@ -18,7 +18,7 @@ var EnjoyTwoSouthend = React.createClass({
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
           <p>Essex is an ancient county; with hidden historical treasures, pretty villages and beautiful coastline. Get there using local buses or trains and enjoy the view. Some suggestions: Leigh-On-Sea, Hadleigh Farm Country Park, Hyde Hall, Westcliff-on Sea, Audley End House, Colchester Zoo, Hylands House in Chelmsford for V Festival.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.visitessex.com"> www.visitessex.com</a></p>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.visitessex.com/"> www.visitessex.com</a></p>
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"enjoy_southend_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
