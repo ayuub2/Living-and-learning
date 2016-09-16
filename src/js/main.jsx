@@ -89,10 +89,12 @@ var MoneyPageThreeSouthend = require("./pages/money_three_southend");
 var MoneyPageFourSouthend = require("./pages/money_four_southend");
 
 var EnjoyPageSouthend = require("./pages/enjoy_southend");
+var EnjoyPageTwoSouthend = require("./pages/enjoy_two_southend");
 
 var Screen = React.createClass({
 
   selectButton:function(page){
+    console.log(page);
     if (page == "second") {
       router.goto("/second/");
     }
@@ -569,13 +571,18 @@ var Screen = React.createClass({
     }
     else if(page == "money_four_southend_back"){
       router.goto("/money_four_southend/");
-
     }
     else if(page == "enjoy_southend"){
       router.goto("/enjoy_southend/");
     }
     else if(page == "enjoy_southend_back"){
       router.goto("enjoy_southend/");
+    }
+    else if(page == "enjoy_two_southend"){
+      router.goto("/enjoy_two_southend/");
+    }
+    else if(page == "enjoy_two_southend_back"){
+      router.goto("enjoy_two_southend/");
     }
   },
 
@@ -667,6 +674,7 @@ var Screen = React.createClass({
                 <MoneyPageThreeSouthend path="/money_three_southend/" onSelect={this.selectButton}/>
                 <MoneyPageFourSouthend path="/money_four_southend/" onSelect={this.selectButton}/>
                 <EnjoyPageSouthend path="/enjoy_southend/" onSelect={this.selectButton}/>
+                <EnjoyPageTwoSouthend path="/enjoy_two_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>
