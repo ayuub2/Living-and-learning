@@ -24,12 +24,12 @@ var NewsPageSouthend = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/arrow.jpg"/><a href="https://www.essex.ac.uk/it/groups-lists/"> www.essex.ac.uk/welcome/news</a></p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Social media</h2>
           <p>We have more than 60 Facebook pages. There’s one for each school or department, plus the Southend Student Services Hub page. You can find us on Twitter too.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="https://www.facebook.comwww.facebook.com/southendstudents/"> www.facebook.com/southendstudents/</a>
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="https://www.facebook.comwww.facebook.com/uniofessex/"> www.facebook.com/uniofessex/</a>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="https://www.facebook.com/uniofessex/"> www.facebook.com/uniofessex/</a>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="https://www.facebook.com/southendstudents/"> www.facebook.com/southendstudents/</a>
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/twitter.jpg"/>@Uni_of_Essex</p>
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Student webpages</h2>
           <p>Featuring a wealth of student information. Make this your homepage. Forever, if you like.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="https://www.essex.ac.uk/welcome/students"> www.essex.ac.uk/welcome/students</a></p>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/blue/fb.jpg"/><a href="http://www.essex.ac.uk/students/"> www.essex.ac.uk/welcome/students</a></p>
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"map_southend_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
