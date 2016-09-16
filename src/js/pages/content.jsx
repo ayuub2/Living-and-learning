@@ -28,8 +28,7 @@ onClick:function(page,ev){
 
   render:function(){
     console.log(location.name);
-    //TODO:change back to colchester
-    if(location.name == "southend"){
+    if(location.name == "Colchester"){
       return (
         <Page>
           <BasicSegment nopadding style={{height:"40%", width:"100%"}}>
