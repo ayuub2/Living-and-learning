@@ -3,7 +3,7 @@ var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
 
-var EnjoySouthend = React.createClass({
+var EnjoyTwoSouthend = React.createClass({
 
   onClick:function(page,ev){
     ev.preventDefault();
@@ -29,4 +29,4 @@ var EnjoySouthend = React.createClass({
     );
   }
 });
-module.exports = EnjoySouthend;
+module.exports = EnjoyTwoSouthend;

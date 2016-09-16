@@ -3,7 +3,7 @@ var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
 
-var MapsPage = React.createClass({
+var MapsPageSouthend = React.createClass({
 
   onClick:function(page,ev){
       ev.preventDefault();
@@ -22,7 +22,7 @@ var MapsPage = React.createClass({
           <h2 style={{color:"#ff3399", fontWeight:"bold"}}>Campus map</h2>
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/welcome/map"> www.essex.ac.uk/welcome/map</a>
           <BasicSegment style={{height:"60px"}}>
-            <Button onClick={this.onClick.bind(this,"eat_three_southend_back")}>Back</Button>
+            <Button onClick={this.onClick.bind(this,"eat_two_southend_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
             <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"news_southend")}>Next</Button>
           </BasicSegment>
@@ -31,4 +31,4 @@ var MapsPage = React.createClass({
     );
   }
 });
-module.exports = MapsPage;
+module.exports = MapsPageSouthend;
