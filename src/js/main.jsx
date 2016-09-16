@@ -93,6 +93,8 @@ var EnjoyPageSouthend = require("./pages/enjoy_southend");
 var EnjoyPageTwoSouthend = require("./pages/enjoy_two_southend");
 
 var MapPageSouthend = require("./pages/map_southend");
+var NewsPageSouthend = require("./pages/news_southend");
+var NewsPageTwoSouthend = require("./pages/news_two_southend");
 
 var Screen = React.createClass({
 
@@ -605,6 +607,18 @@ var Screen = React.createClass({
     else if(page == "map_southend_back"){
       router.goto("map_southend/");
     }
+    else if(page == "news_southend"){
+      router.goto("/news_southend/");
+    }
+    else if(page == "news_southend_back"){
+      router.goto("news_southend/");
+    }
+    else if(page == "news_two_southend"){
+      router.goto("/news_two_southend/");
+    }
+    else if(page == "news_two_southend_back"){
+      router.goto("news_two_southend/");
+    }
   },
 
   render:function() {
@@ -699,6 +713,8 @@ var Screen = React.createClass({
                 <EnjoyPageSouthend path="/enjoy_southend/" onSelect={this.selectButton}/>
                 <EnjoyPageTwoSouthend path="/enjoy_two_southend/" onSelect={this.selectButton}/>
                 <MapPageSouthend path="/map_southend/" onSelect={this.selectButton}/>
+                <NewsPageSouthend path="/news_southend/" onSelect={this.selectButton}/>
+                <NewsPageTwoSouthend path="/news_two_southend/" onSelect={this.selectButton}/>
               </RouterView>
             </Panel>
         </VBox>

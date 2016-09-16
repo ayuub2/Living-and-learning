@@ -6,10 +6,9 @@ var Button = require("-components/button");
 var NewsPageSouthend = React.createClass({
 
   onClick:function(page,ev){
-      ev.preventDefault();
-      this.props.onSelect(page);
-
-    },
+    ev.preventDefault();
+    this.props.onSelect(page);
+  },
 
   render:function(){
     return (
@@ -34,7 +33,7 @@ var NewsPageSouthend = React.createClass({
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"map_southend_back")}>Back</Button>
             <Button style={{position:"absolute", left:"45%", padding:"10px"}} circular onClick={this.onClick.bind(this,"content")}><i style={{margin:"auto",display:"block"}} className="grid layout icon"></i></Button>
-            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"news_two")}>Next</Button>
+            <Button style={{position:"absolute", right:"0px"}} onClick={this.onClick.bind(this,"news_two_southend")}>Next</Button>
           </BasicSegment>
         </BasicSegment>
       </Page>
