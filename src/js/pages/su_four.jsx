@@ -31,11 +31,11 @@ var SuPageFour = React.createClass({
     var url;
     var page;
     if(location.name == "Colchester"){
-      url = "http://www.essex.ac.uk/campusm/su_two/su_four.jpg";
+      url = "http://www.essex.ac.uk/campusm/su/su_four.jpg";
       page = "welcome_southend";
     }
     else{
-      url = "http://www.essex.ac.uk/campusm/su/su_four.jpg";
+      url = "http://www.essex.ac.uk/campusm/su_two/su_four.jpg";
       page = "welcome";
     }
     return (

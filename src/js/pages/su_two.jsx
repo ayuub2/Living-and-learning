@@ -30,10 +30,10 @@ var SuPageTwo = React.createClass({
   render:function(){
     var url;
     if(location.name == "Colchester"){
-      url = "http://www.essex.ac.uk/campusm/su_two/su_two.jpg";
+      url = "http://www.essex.ac.uk/campusm/su_/su_two.jpg";
     }
     else{
-      url = "http://www.essex.ac.uk/campusm/su/su_two.jpg";
+      url = "http://www.essex.ac.uk/campusm/su_two/su_two.jpg";
     }
     return (
       <Page>
