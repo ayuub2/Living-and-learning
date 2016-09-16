@@ -709,7 +709,7 @@ var Screen = React.createClass({
                 <WelcomePageThreeSouthend path="/welcome_three_southend/" onSelect={this.selectButton}/>
                 <WelcomePageFourSouthend path="/welcome_four_southend" onSelect={this.selectButton}/>
                 <SportsPageSouthend path="/sports_southend/" onSelect={this.selectButton}/>
-                <SportsPageTwoSouthend path="sports_two_southend" onSelect={this.selectButton}/>
+                <SportsPageTwoSouthend path="/sports_two_southend/" onSelect={this.selectButton}/>
                 <MoneyPageSouthend path="/money_southend/" onSelect={this.selectButton}/>
                 <MoneyPageTwoSouthend path="/money_two_southend/" onSelect={this.selectButton}/>
                 <MoneyPageThreeSouthend path="/money_three_southend/" onSelect={this.selectButton}/>
