@@ -19,7 +19,7 @@ var HealthPageTwoSouthend = React.createClass({
         </BasicSegment>
         <BasicSegment style={{position:"absolute", width:"100%", top:"50px", height:"525px"}}>
           <p>Our SU advice centre offers free, confidential, independent and impartial advice on any issue that might be affecting you. Our friendly, trained staff are on hand to support you throughout your time at Essex. Open 11am–3pm  on Tuesdays and Fridays and 12pm-5pm on Thursdays. Find us above the Students’ Union Lounge.
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/>www.essexstudent.com/southend/advice
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="https://www.essexstudent.com/southend/advice/"> www.essexstudent.com/southend/advice</a>
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/>suacsou@essex.ac.uk
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/telephone.jpg"/> 01702 328235</p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>International students</h2>

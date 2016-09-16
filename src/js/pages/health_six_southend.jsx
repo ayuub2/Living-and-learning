@@ -24,8 +24,8 @@ var HealthPageSixSouthend = React.createClass({
           <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/students/groups/carers.aspx"> www.essex.ac.uk/welcome/carers</a></p>
           <h2 style={{color:"#33ccff", fontWeight:"bold"}}>Council Tax</h2>
           <p>Most full-time students are exempt from Council Tax. If you’re a student living in University accommodation at our Southend Campus, you’ll automatically be exempt. If you’re not in student accommodation, you can order a council tax exemption certificate from Student Services, using our online Student Documentation Ordering System.<br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/students/groups/carers.aspx"> www.essex.ac.uk/welcome/carers</a>
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/welcome/accommodation"> www.essex.ac.uk/welcome/accommodation</a>
-          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/welcome/studentdocs"> www.essex.ac.uk/welcome/studentdocs</a>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="http://www.essex.ac.uk/accommodation/"> www.essex.ac.uk/welcome/accommodation</a>
+          <br/><img height="10px" width="10px" src="http://www.essex.ac.uk/campusm/edits/icons/arrow.jpg"/><a href="https://www.essex.ac.uk/studentdocs/"> www.essex.ac.uk/welcome/studentdocs</a>
           </p>
           <BasicSegment style={{height:"60px"}}>
             <Button onClick={this.onClick.bind(this,"health_five_southend_back")}>Back</Button>
