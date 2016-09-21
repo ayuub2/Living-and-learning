@@ -1,6 +1,7 @@
 var React = require("-aek/react");
 var Container = require("-components/container");
 var {VBox, Panel} = require("-components/layout");
+var {BannerHeader} = require("-components/header");
 var {AekReactRouter, RouterView} = require("-components/router");
 
 var router = new AekReactRouter();
@@ -630,6 +631,7 @@ var Screen = React.createClass({
   render:function() {
     return (
       <Container>
+        <BannerHeader theme="alt" key="header" flex={0}>Living and Learning</BannerHeader>
         <VBox>
             <Panel>
               <RouterView router={router}>
