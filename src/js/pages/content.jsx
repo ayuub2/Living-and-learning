@@ -3,6 +3,7 @@ var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
 var CampusLocator = require("uoe-campus-awareness/campus-locator");
 var location;
+var city;
 
 
   var campusLocator = new CampusLocator();
@@ -11,12 +12,13 @@ var location;
   location = result;
    // Success
   }, function(error) {
-    location = campusLocator.campus[0];
     console.error(error); // failed
 
   })
   .then(function() {
-  // Code that is run regardless of whether the request succeeded or failed
+    if(location == null){
+      city = "Colchester";
+    }
   });
 
 
@@ -29,8 +31,11 @@ onClick:function(page,ev){
 
 
   render:function(){
-    console.log(location.name);
-    if(location.name == "Southend"){
+    if(location != null){
+      city = location.name;
+    }
+    console.log(city);
+    if(city == "Southend"){
       return (
         <Page>
           <BasicSegment nopadding style={{height:"40%", width:"100%"}}>

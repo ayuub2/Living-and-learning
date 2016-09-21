@@ -4,6 +4,7 @@ var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
 var CampusLocator = require("uoe-campus-awareness/campus-locator");
 var location;
+var city;
 
 
   var campusLocator = new CampusLocator();
@@ -15,7 +16,9 @@ var location;
   console.error(error); // failed
   })
   .then(function() {
-  // Code that is run regardless of whether the request succeeded or failed
+    if(location == null){
+      city = "Colchester";
+    }
   });
 
 
@@ -29,7 +32,10 @@ var SuPageTwo = React.createClass({
 
   render:function(){
     var url;
-    if(location.name == "Colchester"){
+    if(location != null){
+      city = location.name;
+    }
+    if(city == "Colchester"){
       url = "http://www.essex.ac.uk/campusm/su_/su_two.jpg";
     }
     else{
