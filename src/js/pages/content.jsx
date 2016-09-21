@@ -11,8 +11,9 @@ var location;
   location = result;
    // Success
   }, function(error) {
-  console.error(error); // failed
-  location = campusLocator.campus[0];
+    location = campusLocator.campus[0];
+    console.error(error); // failed
+
   })
   .then(function() {
   // Code that is run regardless of whether the request succeeded or failed
