@@ -12,6 +12,7 @@ var location;
    // Success
   }, function(error) {
   console.error(error); // failed
+  location = campusLocator.campus[0];
   })
   .then(function() {
   // Code that is run regardless of whether the request succeeded or failed
