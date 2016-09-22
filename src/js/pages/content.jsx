@@ -76,9 +76,9 @@ var ContentPage = React.createClass({
           linkProperties = {
             style: {
               display: "block",
-              href: "javascript:void(0);",
               fontSize: "120%"
-            }
+            },
+            href: "javascript:void(0);"
           };
 
       if(city == "Southend"){
@@ -177,81 +177,81 @@ var ContentPage = React.createClass({
                 <table  style={{width:"100%", marginTop:"-20px"}}>
                   <tr>
                     <th style={{color:"#33ccff", fontSize:"135%", width:"30px"}}>01</th>
-                    <th><a onClick={this.onSelectMenu("study")} onTouchStart={this.onSelectMenu("study")} style={{display:"block"}}>Your studies</a></th>
+                    <th><a onClick={this.onSelectMenu("study")} onTouchStart={this.onSelectMenu("study")} {...linkProperties}>Your studies</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#33ccff", fontSize:"135%"}}>05</th>
-                    <th><a onClick={this.onSelectMenu("tech_one")} onTouchStart={this.onSelectMenu("tech_one")} style={{display:"block"}}>Tech World</a></th>
+                    <th><a onClick={this.onSelectMenu("tech_one")} onTouchStart={this.onSelectMenu("tech_one")} {...linkProperties}>Tech World</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#33ccff", fontSize:"135%"}}>09</th>
-                    <th><a onClick={this.onSelectMenu("health")} onTouchStart={this.onSelectMenu("health")} style={{display:"block"}}>Staying health and happy</a></th>
+                    <th><a onClick={this.onSelectMenu("health")} onTouchStart={this.onSelectMenu("health")} {...linkProperties}>Staying health and happy</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#33ccff", fontSize:"135%"}}>17</th>
-                    <th><a onClick={this.onSelectMenu("career")} onTouchStart={this.onSelectMenu("career")}>Future career starts here</a></th>
+                    <th><a onClick={this.onSelectMenu("career")} onTouchStart={this.onSelectMenu("career")} {...linkProperties}>Future career starts here</a></th>
                   </tr>
                 </table>
                 <h2 style={{color:"#2FFB3C", fontWeight:"bold"}}>Student Union</h2>
                 <table  style={{width:"100%", marginTop:"-20px"}}>
                   <tr>
                     <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>20</th>
-                    <th><a onClick={this.onSelectMenu("su")} onTouchStart={this.onSelectMenu("su")}>Hello wonderful people</a></th>
+                    <th><a onClick={this.onSelectMenu("su")} onTouchStart={this.onSelectMenu("su")} {...linkProperties}>Hello wonderful people</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>21</th>
-                    <th><a onClick={this.onSelectMenu("su_two")} onTouchStart={this.onSelectMenu("su_two")}>What do we do?</a></th>
+                    <th><a onClick={this.onSelectMenu("su_two")} onTouchStart={this.onSelectMenu("su_two")} {...linkProperties}>What do we do?</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>22</th>
-                    <th><a onClick={this.onSelectMenu("su_three")} onTouchStart={this.onSelectMenu("su_three")}>10 reasons why</a></th>
+                    <th><a onClick={this.onSelectMenu("su_three")} onTouchStart={this.onSelectMenu("su_three")} {...linkProperties}>10 reasons why</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#2FFB3C", fontSize:"135%", width:"30px"}}>23</th>
-                    <th><a onClick={this.onSelectMenu("su_four")} onTouchStart={this.onSelectMenu("su_four")}>This is just the start</a></th>
+                    <th><a onClick={this.onSelectMenu("su_four")} onTouchStart={this.onSelectMenu("su_four")} {...linkProperties}>This is just the start</a></th>
                   </tr>
                 </table>
                 <h2 style={{color:"#ff3399", fontWeight:"bold"}}>LIVING</h2>
                 <table  style={{width:"100%", marginTop:"-20px"}}>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%", width:"30px"}}>24</th>
-                    <th><a onClick={this.onSelectMenu("welcome")} onTouchStart={this.onSelectMenu("welcome")}>Welcome Home</a></th>
+                    <th><a onClick={this.onSelectMenu("welcome")} onTouchStart={this.onSelectMenu("welcome")} {...linkProperties}>Welcome Home</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>28</th>
-                    <th><a onClick={this.onSelectMenu("sports")} onTouchStart={this.onSelectMenu("sports")}>Sports at Essex</a></th>
+                    <th><a onClick={this.onSelectMenu("sports")} onTouchStart={this.onSelectMenu("sports")} {...linkProperties}>Sports at Essex</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>31</th>
-                    <th><a onClick={this.onSelectMenu("culture")} onTouchStart={this.onSelectMenu("culture")}>Cultural Essex</a></th>
+                    <th><a onClick={this.onSelectMenu("culture")} onTouchStart={this.onSelectMenu("culture")} {...linkProperties}>Cultural Essex</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>33</th>
-                    <th><a onClick={this.onSelectMenu("money")} onTouchStart={this.onSelectMenu("money")}>Money matters</a></th>
+                    <th><a onClick={this.onSelectMenu("money")} onTouchStart={this.onSelectMenu("money")} {...linkProperties}>Money matters</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>37</th>
-                    <th><a onClick={this.onSelectMenu("eat")} onTouchStart={this.onSelectMenu("eat")}>Eat, drink, buy</a></th>
+                    <th><a onClick={this.onSelectMenu("eat")} onTouchStart={this.onSelectMenu("eat")} {...linkProperties}>Eat, drink, buy</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>40</th>
-                    <th><a onClick={this.onSelectMenu("green")} onTouchStart={this.onSelectMenu("green")}>Green space</a></th>
+                    <th><a onClick={this.onSelectMenu("green")} onTouchStart={this.onSelectMenu("green")} {...linkProperties}>Green space</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>41</th>
-                    <th><a onClick={this.onSelectMenu("around")} onTouchStart={this.onSelectMenu("around")}>Get around</a></th>
+                    <th><a onClick={this.onSelectMenu("around")} onTouchStart={this.onSelectMenu("around")} {...linkProperties}>Get around</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>44</th>
-                    <th><a onClick={this.onSelectMenu("map")} onTouchStart={this.onSelectMenu("map")}>Maps</a></th>
+                    <th><a onClick={this.onSelectMenu("map")} onTouchStart={this.onSelectMenu("map")} {...linkProperties}>Maps</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>46</th>
-                    <th><a onClick={this.onSelectMenu("news")} onTouchStart={this.onSelectMenu("news")}>News and media</a></th>
+                    <th><a onClick={this.onSelectMenu("news")} onTouchStart={this.onSelectMenu("news")} {...linkProperties}>News and media</a></th>
                   </tr>
                   <tr>
                     <th style={{color:"#ff3399", fontSize:"135%"}}>49</th>
-                    <th><a onClick={this.onSelectMenu("essex")} onTouchStart={this.onSelectMenu("essex")}>Essex is for life</a></th>
+                    <th><a onClick={this.onSelectMenu("essex")} onTouchStart={this.onSelectMenu("essex")} {...linkProperties}>Essex is for life</a></th>
                   </tr>
                 </table>
             </BasicSegment>
