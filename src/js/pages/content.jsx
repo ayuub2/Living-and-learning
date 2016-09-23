@@ -31,7 +31,7 @@ var ContentPage = React.createClass({
       this.props.onSelect(page);
     },
   onSuccess:function(result){
-    location  = result;
+    location = result;
      this.setState({
        location:location
      });
