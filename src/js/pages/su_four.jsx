@@ -73,9 +73,7 @@ var SuPageFour = React.createClass({
     return (
       <Page>
         <BasicSegment style={{padding:"0px", margin:"0px"}}>
-          <Button compact="true" style={{padding:"0px", margin:"0px"}} onClick={this.onClick.bind(this,page)}>
-            <img src={url} height="100%" width="100%"/>
-          </Button>
+          <img src={url} height="100%" width="100%" onClick={this.onClick.bind(this,page)}/>
         </BasicSegment>
       </Page>
     );
