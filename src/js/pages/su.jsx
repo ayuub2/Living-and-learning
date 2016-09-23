@@ -41,6 +41,12 @@ var SuPage = React.createClass({
     this.props.onSelect(page);
   },
 
+  onLocationError: function(error) {
+    this.setState({ location:{city:"Colchester"} });
+    console.error(error);
+  },
+
+
   render:function(){
     var city = this.state.location.name,
         url;

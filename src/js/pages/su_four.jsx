@@ -28,6 +28,12 @@ var SuPageFour = React.createClass({
       });
   },
 
+  onLocationError: function(error) {
+    this.setState({ location:{city:"Colchester"} });
+    console.error(error);
+  },
+
+
   /**
     When we have a location, update the component state
     to re-render the view

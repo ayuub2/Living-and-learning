@@ -43,7 +43,7 @@ var SuPageThree = React.createClass({
     and re-render the view
   */
   onLocationError: function(error) {
-    this.setState({ location: CampusLocator.campus[0] });
+    this.setState({ location:{city:"Colchester"} });
     console.error(error);
   },
 

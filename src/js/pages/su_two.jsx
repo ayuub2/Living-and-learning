@@ -36,6 +36,12 @@ var SuPageTwo = React.createClass({
     this.setState({ location: result });
   },
 
+  onLocationError: function(error) {
+    this.setState({ location:{city:"Colchester"} });
+    console.error(error);
+  },
+
+
   onClick:function(page,ev){
     ev.preventDefault();
     this.props.onSelect(page);
