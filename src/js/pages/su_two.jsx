@@ -6,15 +6,19 @@ var CampusLocator = require("uoe-campus-awareness/campus-locator");
 
 var SuPageTwo = React.createClass({
 
+  getInitialState: function() {
+    return {
+      location: null
+    };
+  },
+
   /**
     On Mount, set up the default state
   */
   componentDidMount: function() {
-    this.state = {
-      location: CampusLocator.campus[0]
-    };
     this.getLocation();
   },
+
 
   /**
     Grabs the users current location, and re-renders the page
@@ -23,10 +27,9 @@ var SuPageTwo = React.createClass({
     var campusLocator = new CampusLocator();
 
     campusLocator.getCampus()
-      .then(this.onLocationSuccess, (error) => {
-        console.error(error);
-      });
+      .then(this.onLocationSuccess, this.onLocationError);
   },
+
 
   /**
     When we have a location, update the component state
@@ -37,10 +40,9 @@ var SuPageTwo = React.createClass({
   },
 
   onLocationError: function(error) {
-    this.setState({ location:{city:"Colchester"} });
+    this.setState({ location: {city:"Colchester"} });
     console.error(error);
   },
-
 
   onClick:function(page,ev){
     ev.preventDefault();
@@ -48,8 +50,15 @@ var SuPageTwo = React.createClass({
   },
 
   render:function(){
-    var city = this.state.location.name,
-        url;
+    var city;
+    var url;
+    if(this.state.location === null){
+      city = "Colchester";
+    }
+    else{
+      city = this.state.location.name;
+    }
+
 
     if(city == "Colchester"){
       url = "http://www.essex.ac.uk/campusm/su/su_two.jpg";
