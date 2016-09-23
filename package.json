@@ -25,7 +25,8 @@
     "access": {
       "write": {
         "users": [
-          "ayuub_adan"
+          "ayuub_adan",
+          "john_maydew"
         ]
       }
     },

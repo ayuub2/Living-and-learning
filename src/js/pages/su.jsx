@@ -3,41 +3,51 @@ var Page = require("-components/page");
 var {BasicSegment} = require("-components/segment");
 var Button = require("-components/button");
 var CampusLocator = require("uoe-campus-awareness/campus-locator");
-var location;
-var city;
-
-  var campusLocator = new CampusLocator();
-  campusLocator.getCampus()
-  .then(function(result) {
-  location = result;
-   // Success
-  }, function(error) {
-  console.error(error); // failed
-  })
-  .then(function() {
-    if(location == null){
-      city = "Colchester";
-    }
-  });
-
 
 var SuPage = React.createClass({
+
+  /**
+    On Mount, set up the default state
+  */
+  componentDidMount: function() {
+    this.state = {
+      location: CampusLocator.campus[0]
+    };
+    this.getLocation();
+  },
+
+  /**
+    Grabs the users current location, and re-renders the page
+  */
+  getLocation: function() {
+    var campusLocator = new CampusLocator();
+
+    campusLocator.getCampus()
+      .then(this.onLocationSuccess, (error) => {
+        console.error(error);
+      });
+  },
+
+  /**
+    When we have a location, update the component state
+    to re-render the view
+  */
+  onLocationSuccess: function(result) {
+    this.setState({ location: result });
+  },
+
   onClick:function(page,ev){
     ev.preventDefault();
     this.props.onSelect(page);
   },
 
-
-
   render:function(){
-    var url;
-    if(location != null){
-      city = location.name;
-    }
+    var city = this.state.location.name,
+        url;
+
     if(city == "Colchester"){
       url = "http://www.essex.ac.uk/campusm/su/su.jpg";
-    }
-    else{
+    } else {
       url = "http://www.essex.ac.uk/campusm/su_two/su.jpg";
     }
     return (
