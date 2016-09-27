@@ -71,7 +71,7 @@ var ContentPage = React.createClass({
         <Page>
           <Segment>
             <Segment variation="vertical" loading={true}></Segment>
-            <Segment variation="vertical">Please turn on your loction and restart the app...</Segment>
+            <Segment variation="vertical">Please turn on your loction and restart the app or choose a campus below</Segment>
             <Segment>
               <Button onClick={function(){this.onLocationChoice("Colchester");}.bind(this)}>Colchester</Button>
               <Button onClick={function(){this.onLocationChoice("Southend");}.bind(this)}>Southend</Button>
