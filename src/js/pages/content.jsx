@@ -38,6 +38,10 @@ var ContentPage = React.createClass({
     this.setState({ location: result });
   },
 
+  onLocationChoice: function(city){
+    this.setState({ location: {city:city} });
+  },
+
   /**
     If we don't have a location, default to Colchester
     and re-render the view
@@ -69,8 +73,8 @@ var ContentPage = React.createClass({
             <Segment variation="vertical" loading={true}></Segment>
             <Segment variation="vertical">Please turn on your loction and restart the app...</Segment>
             <Segment>
-              <Button onClick={this.setState({ location: {city:"Colchester"} })}>Colchester</Button>
-              <Button onClick={this.setState({ location: {city:"Southend"} })}>Southend</Button>
+              <Button onClick={function(){this.onLocationChoice("Colchester");}.bind(this)}>Colchester</Button>
+              <Button onClick={function(){this.onLocationChoice("Southend");}.bind(this)}>Southend</Button>
             </Segment>
           </Segment>
         </Page>
