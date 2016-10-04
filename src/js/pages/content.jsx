@@ -39,15 +39,15 @@ var ContentPage = React.createClass({
   },
 
   onLocationChoice: function(city){
-    this.setState({ location: {city:city} });
+    this.setState({ location: { name: city }});
   },
 
   /**
-    If we don't have a location, default to Colchester
-    and re-render the view
+    If we don't have a location, force rendering the
+    campus select buttons
   */
   onLocationError: function(error) {
-    this.setState({ location: {city:"Colchester"} });
+    this.setState({ location: null });
     console.error(error);
   },
 
@@ -66,18 +66,15 @@ var ContentPage = React.createClass({
     // If the location is null, we're still fetching a
     // location
     if(this.state.location == null) {
-
       return  (
-        <Page>
-          <Segment>
-            <Segment variation="vertical" loading={true}></Segment>
-            <Segment variation="vertical">Please turn on your loction and restart the app or choose a campus below</Segment>
-            <Segment>
-              <Button onClick={function(){this.onLocationChoice("Colchester");}.bind(this)}>Colchester</Button>
-              <Button onClick={function(){this.onLocationChoice("Southend");}.bind(this)}>Southend</Button>
-            </Segment>
-          </Segment>
-        </Page>
+        <Segment>
+          <BasicSegment variation="vertical" loading={true}></BasicSegment>
+          <BasicSegment variation="vertical" textAlign="center">Please turn on your loction and restart the app or choose a campus below</BasicSegment>
+          <BasicSegment variation="vertical" textAlign="center">
+            <Button onClick={function(){this.onLocationChoice("Colchester");}.bind(this)}>Colchester</Button>
+            <Button onClick={function(){this.onLocationChoice("Southend");}.bind(this)}>Southend</Button>
+          </BasicSegment>
+        </Segment>
       );
     } else {
       var city = this.state.location.name,
