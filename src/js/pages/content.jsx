@@ -1,10 +1,13 @@
 var React = require("-aek/react");
+var AekStorage = require("-aek/storage");
 var Page = require("-components/page");
 var { Segment, BasicSegment } = require("-components/segment");
 var Button = require("-components/button");
 var CampusLocator = require("uoe-campus-awareness/campus-locator");
 
 var ContentPage = React.createClass({
+
+  storage: new AekStorage("uoe-living"),
 
   /**
     On Mount, grab the current location
@@ -39,6 +42,7 @@ var ContentPage = React.createClass({
   },
 
   onLocationChoice: function(city){
+    this.storage.set("city", city);
     this.setState({ location: { name: city }});
   },
 
@@ -65,7 +69,7 @@ var ContentPage = React.createClass({
 
     // If the location is null, we're still fetching a
     // location
-    if(this.state.location == null) {
+    if(this.state.location == null && this.storage.get("city") == null) {
       return  (
         <Segment>
           <BasicSegment variation="vertical" loading={true}></BasicSegment>
@@ -77,7 +81,7 @@ var ContentPage = React.createClass({
         </Segment>
       );
     } else {
-      var city = this.state.location.name,
+      var city = this.state.location ? this.state.location.name : this.storage.get("city"),
 
           // Properties for hyperlinks
           linkProperties = {
